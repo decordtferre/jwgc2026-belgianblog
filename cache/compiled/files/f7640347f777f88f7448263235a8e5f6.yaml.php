@@ -1,0 +1,41 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/home/user/decordtferre/www/user/config/themes/quark.yaml',
+    'modified' => 1774383686,
+    'size' => 915,
+    'data' => [
+        'enabled' => true,
+        'production-mode' => true,
+        'grid-size' => 'grid-lg',
+        'header-fixed' => true,
+        'header-animated' => true,
+        'header-dark' => true,
+        'header-transparent' => false,
+        'sticky-footer' => true,
+        'display_toptop' => false,
+        'blog-page' => '/blog',
+        'spectre' => [
+            'exp' => false,
+            'icons' => false
+        ],
+        'custom_logo' => [
+            'user/themes/quark/images/logo/Belgian-Junior-Gliding-Team-e1709935832891.jpg' => [
+                'name' => 'Belgian-Junior-Gliding-Team-e1709935832891.jpg',
+                'full_path' => 'Belgian-Junior-Gliding-Team-e1709935832891.jpg',
+                'type' => 'image/jpeg',
+                'size' => 46671,
+                'path' => 'user/themes/quark/images/logo/Belgian-Junior-Gliding-Team-e1709935832891.jpg'
+            ]
+        ],
+        'custom_logo_mobile' => [
+            'user/themes/quark/images/logo/Belgian-Junior-Gliding-Team-e1709935832891.jpg' => [
+                'name' => 'Belgian-Junior-Gliding-Team-e1709935832891.jpg',
+                'full_path' => 'Belgian-Junior-Gliding-Team-e1709935832891.jpg',
+                'type' => 'image/jpeg',
+                'size' => 46671,
+                'path' => 'user/themes/quark/images/logo/Belgian-Junior-Gliding-Team-e1709935832891.jpg'
+            ]
+        ]
+    ]
+];
