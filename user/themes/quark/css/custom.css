@@ -1,4 +1,6 @@
-/* --- 1. HEADER & NAVIGATION --- */
+/* ==========================================================================
+   1. HEADER & NAVIGATION
+   ========================================================================== */
 #header {
     background: #ffffff !important;
     position: fixed !important;
@@ -10,7 +12,7 @@
     display: flex !important;
     align-items: center !important;
     min-height: 80px;
-    transition: min-height 0.3s ease, padding 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #header .navbar {
@@ -20,9 +22,10 @@
 }
 
 #header.scrolled {
-    min-height: 55px;
+    min-height: 60px;
 }
 
+/* Logo & Text Styling */
 .navbar-brand.mr-2 {
     display: flex !important;
     flex-direction: row !important;
@@ -32,7 +35,7 @@
 }
 
 .navbar-brand.mr-2 img {
-    height: 90px !important;
+    height: 70px !important; /* Iets verkleind voor betere verhouding */
     width: auto !important;
     display: block !important;
     transition: height 0.3s ease;
@@ -45,7 +48,7 @@
     color: #333 !important;
     text-transform: uppercase;
     white-space: nowrap;
-    line-height: 1 !important;
+    line-height: 1.1 !important;
     transition: font-size 0.3s ease;
 }
 
@@ -57,24 +60,47 @@
     font-size: 1.0rem !important;
 }
 
-/* --- 2. PAGE SPACING --- */
+#header .navbar-nav a,
+#header .navbar-nav li a {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   2. PAGE STRUCTURE & SPACING
+   ========================================================================== */
 body {
-    padding-top: 120px !important;
+    padding-top: 80px !important; /* Ruimte voor de fixed header */
 }
 
-.section.modular-text,
-.section.modular-features,
-.section.modular-hero {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-}
-
-.section h1,
-.section h2 {
+#body-wrapper.section {
+    padding-top: 1rem !important;
     margin-top: 0 !important;
 }
 
-/* --- 3. EMBEDS & IMAGES --- */
+.section.modular-text {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section h1, .section h2 {
+    margin-top: 0 !important;
+}
+
+p {
+    text-align: justify !important;
+}
+
+/* Container voor tekst-modules op homepage */
+.modular-text .container {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+/* ==========================================================================
+   3. EMBEDS & IMAGES
+   ========================================================================== */
 iframe {
     width: 100%;
     max-width: 1100px;
@@ -87,107 +113,32 @@ iframe {
 }
 
 .modular-text img {
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    max-width: 100%;
-    height: auto;
-}
-
-p {
-    text-align: justify !important;
-}
-
-/* --- MOBILE --- */
-@media (max-width: 768px) {
-
-  #header {
-    min-height: 60px !important;
-    padding: 6px 10px !important;
-  }
-
-  #header.scrolled {
-    min-height: 45px !important;
-  }
-
-  #header.scrolled .navbar-brand.mr-2 img {
-    height: 32px !important;
-  }
-
-  #header.scrolled .logo-text {
-    font-size: 0.6rem !important;
-  }
-
-  .navbar-brand.mr-2 {
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px !important;
-  }
-
-  .navbar-brand.mr-2 img {
-    height: 45px !important;
-  }
-
-  .logo-text {
-    font-size: 0.9rem !important;
-    white-space: normal !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    line-height: 1.2 !important;
-  }
-
-  .logo-line1,
-  .logo-line2 {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  body {
-    padding-top: 75px !important;
-  }
-
-  h1 { font-size: 1.8rem !important; }
-  h2 { font-size: 1.4rem !important; }
-
-  iframe {
-    height: 400px !important;
-    margin: 15px auto !important;
-  }
-}
-
-/* Specifiek voor de tekst-modules op de homepage */
-.modular-text {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-/* Zorg dat de container waarin de tekst én foto staan gecentreerd is */
-.modular-text .container {
-    max-width: 900px !important; /* Pas dit aan naar de gewenste breedte van je tekst */
-    margin: 0 auto !important;
-    float: none !important;
-}
-
-/* Dwing de afbeelding om nooit breder te zijn dan de tekst */
-.modular-text img {
     display: block;
     max-width: 100% !important;
     height: auto;
-    margin: 2rem auto !important; /* Centreert de foto horizontaal */
-    float: none !important; /* Voorkomt dat de foto naar links of rechts "vloeit" */
+    margin: 2rem auto !important;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    float: none !important;
 }
 
+/* ==========================================================================
+   4. PILOTEN / TEAM SECTIE
+   ========================================================================== */
+.piloten-lijst {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
 
 .piloot-row {
     display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    gap: 20px;
+    align-items: center !important; /* Verticaal gecentreerd */
+    margin-bottom: 60px;
+    gap: 40px;
 }
 
-/* De magie: draait foto en tekst om voor even rijen */
 .flex-reverse {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
 }
 
 .piloot-foto {
@@ -196,76 +147,82 @@ p {
 
 .piloot-foto img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .piloot-tekst {
-    flex: 2;
+    flex: 1.5;
 }
 
-/* Zorg dat het op mobiel gewoon onder elkaar komt te staan */
-@media (max-width: 768px) {
-    .piloot-row, .flex-reverse {
-        flex-direction: column;
-    }
-}
-
-/* Om-en-om uitlijning voor piloten */
-.flex-reverse {
-    flex-direction: row-reverse !important;
-}
-
-.piloot-row {
-    margin-top: 40px;
-    gap: 30px;
-}
-
-/* Op mobiel alles onder elkaar */
+/* ==========================================================================
+   5. MOBILE & TABLET (RESPONSIVE)
+   ========================================================================== */
 @media (max-width: 840px) {
-    .piloot-row.columns {
+    body {
+        padding-top: 75px !important;
+    }
+
+    #header {
+        min-height: 65px !important;
+        padding: 5px 10px !important;
+    }
+
+    .navbar-brand.mr-2 img {
+        height: 45px !important;
+    }
+
+    .logo-text {
+        font-size: 0.9rem !important;
+        white-space: normal !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Piloten onder elkaar op mobiel */
+    .piloot-row, .flex-reverse {
         flex-direction: column !important;
         display: block !important;
+        margin-bottom: 40px;
     }
+
     .piloot-foto, .piloot-tekst {
         width: 100% !important;
         margin-bottom: 20px;
     }
+
+    iframe {
+        height: 450px !important;
+        margin: 15px auto !important;
+    }
+
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.4rem !important; }
 }
 
-/* Haal de grote witruimte boven de team-sectie weg */
-#body-wrapper.section {
-    padding-top: 2rem !important; /* Standaard is dit vaak 4rem of meer */
+/* ==========================================================================
+   6. MOBILE NAV OVERLAY (QUARK SPECIFIC)
+   ========================================================================== */
+.overlay-menu .treemenu {
+    padding: 0;
+    margin: 0;
+    text-align: center !important;
 }
 
-/* Specifiek voor de piloten-lijst container */
-.piloten-lijst {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+.overlay-menu .treemenu li {
+    list-style: none !important;
+    background: none !important;
+    border: none !important;
+    padding: 1rem 0 !important;
 }
 
-/* 1. Verwijder de padding van de hoofdcontainer */
-#body-wrapper.section {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+.overlay-menu .treemenu a {
+    font-size: 1.6rem !important;
+    color: #fff !important;
+    font-weight: 700;
+    text-decoration: none;
 }
 
-/* 2. Verwijder de marge boven de eerste rij met een piloot */
-.piloten-lijst {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+/* Verberg de 'plusjes' in het mobiele menu */
+.treemenu .toggler {
+    display: none !important;
 }
-
-/* 3. Quark voegt vaak ruimte toe aan de eerste H1 of H2 */
-.piloten-lijst h1:first-child, 
-.piloten-lijst h2:first-child,
-.piloten-lijst .columns:first-child {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-#header .navbar-nav a,
-#header .navbar-nav li a {
-    color: #333 !important;
-}
-
