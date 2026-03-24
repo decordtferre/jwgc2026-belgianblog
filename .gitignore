@@ -1,0 +1,32 @@
+# --- Gevoelige bestanden (beveiliging) ---
+deploy.php
+webhook_token.txt
+.DS_Store
+.env
+
+# --- Grav Specifiek ---
+/bin/
+/cache/
+/logs/
+/images/
+/system/
+/vendor/
+/.dependencies
+/assets/
+
+# --- User folder uitzonderingen ---
+# We willen wel je eigen content en thema's, maar niet de data/cache
+/user/accounts/
+/user/data/
+/user/plugins/error/
+/user/plugins/markdown-notices/
+/user/plugins/problems/
+# Als je de admin plugin via GPM installeert op de server, hoeft die niet in Git:
+/user/plugins/admin/
+/user/plugins/form/
+/user/plugins/email/
+/user/plugins/login/
+
+# --- Backup bestanden ---
+*.bak
+*.log
