@@ -7,7 +7,6 @@ content:
         by: default
         dir: asc
         custom:
-            - _hero
             - _welcome
             - _tracking
             - _results

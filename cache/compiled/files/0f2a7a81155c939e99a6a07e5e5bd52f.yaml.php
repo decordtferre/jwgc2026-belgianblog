@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://admin/admin.yaml',
-    'modified' => 1774383686,
-    'size' => 1901,
+    'modified' => 1769513002,
+    'size' => 1900,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
@@ -39,7 +39,7 @@ return [
         'frontend_preview_target' => 'inline',
         'show_github_msg' => true,
         'admin_icons' => 'line-awesome',
-        'enable_auto_updates_check' => false,
+        'enable_auto_updates_check' => true,
         'notifications' => [
             'feed' => true,
             'dashboard' => true,
