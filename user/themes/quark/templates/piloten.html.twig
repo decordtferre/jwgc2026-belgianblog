@@ -1,0 +1,59 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<section class="container grid-lg" style="padding-top: 0;">
+    <div class="piloten-lijst">
+        {{ page.content|raw }}
+
+        {% for piloot in page.header.piloten %}
+            {% set is_even = loop.index is even %}
+            
+            <div class="columns" style="display: flex; align-items: center; margin-bottom: 4rem; flex-direction: {{ is_even ? 'row-reverse' : 'row' }};">
+                
+                {# Foto Kolom #}
+                <div class="column col-5">
+                    {# We proberen de afbeelding op twee manieren te vinden #}
+                    {% set image = page.media[piloot.foto] ?: page.media.images[piloot.foto] %}
+                    
+                    {% if image %}
+                        <div class="img-container">
+                            {{ image.html('', piloot.naam, 'img-responsive s-rounded shadow-lg')|raw }}
+                        </div>
+                    {% else %}
+                        {# Als hij nog steeds niets vindt, tonen we de exacte mapnaam ter controle #}
+                        <div style="background: #f0f0f0; border: 1px dashed #ccc; padding: 20px; border-radius: 8px; text-align: center;">
+                            <p style="color: #666; font-size: 0.9rem;">
+                                <strong>{{ piloot.naam }}</strong><br>
+                                Zoekt naar: <code>{{ piloot.foto }}</code><br>
+                                <small>Kijkt in: <code>{{ page.relative_path }}</code></small>
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
+
+                {# Tekst Kolom #}
+                <div class="column col-7" style="text-align: {{ is_even ? 'right' : 'left' }}; padding: 0 3rem;">
+                    <h2 style="margin-top: 0; font-weight: 800; color: #333;">{{ piloot.naam }}</h2>
+                    <div style="font-size: 1.1rem; line-height: 1.6; color: #555;">
+                        {{ piloot.tekst|markdown }}
+                    </div>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<style>
+    /* Kleine extra touch voor de foto's */
+    .img-responsive.s-rounded {
+        transition: transform 0.3s ease;
+    }
+    .img-responsive.s-rounded:hover {
+        transform: scale(1.02);
+    }
+    .shadow-lg {
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    }
+</style>
+{% endblock %}

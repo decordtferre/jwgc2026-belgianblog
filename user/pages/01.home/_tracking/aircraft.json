@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Wannes Smits",
+    "cn": "LV",
+    "glider": "LS4",
+    "comp": "Club Class",
+    "flarm": ["DDAB29"]
+  },
+  {
+    "name": "Michiel Haemels",
+    "cn": "LX",
+    "glider": "LS4",
+    "comp": "Club Class",
+    "flarm": ["DDAB30"]
+  },
+  {
+    "name": "Virginie Valck",
+    "cn": "KH",
+    "glider": "LS4",
+    "comp": "Club Class",
+    "flarm": ["DDAB30"]
+  },
+  {
+    "name": "Edwige Colson",
+    "cn": "XX",
+    "glider": "Discus 2a",
+    "comp": "Standard Class",
+    "flarm": ["DDAB30"]
+  }
+]

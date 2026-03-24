@@ -1,0 +1,20 @@
+[
+    {
+        "id": "default-site-backup",
+        "executed_at": "2026-03-10T03:00:10+01:00",
+        "success": true,
+        "output": "\/app\/www\/public\/backup\/default_site_backup--20260310030001.zip"
+    },
+    {
+        "id": "cache-clear",
+        "executed_at": "2026-03-10T03:00:10+01:00",
+        "success": true,
+        "output": "Cleared:  \/app\/www\/public\/cache\/twig\/*\nCleared:  \/app\/www\/public\/cache\/doctrine\/*\nCleared:  \/app\/www\/public\/cache\/compiled\/*\nCleared:  \/app\/www\/public\/assets\/*\n\nTouched: \/app\/www\/public\/user\/config\/system.yaml\n"
+    },
+    {
+        "id": "cache-purge",
+        "executed_at": "2026-03-10T04:00:00+01:00",
+        "success": true,
+        "output": "Purged 0 old cache items (files older than 30 days)"
+    }
+]
