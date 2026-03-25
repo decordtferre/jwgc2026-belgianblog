@@ -1,6 +1,6 @@
 ---
 title: JWGC 2026 Blog
-visible: true
+visible: false
 routable: true
 menu: Blog
 content:

@@ -25,4 +25,16 @@ piloten:
       competitienummer: KH
       zweeftype: LS-4
       tekst: "lorem ipsum"
+    - naam: Guillaume Dohet
+      foto: guillaume.jpg
+      rol: ⭐ Team Captain
+      tekst: "lorem ipsum"
+    - naam: Ferre De Cordt
+      foto: ferre.jpg
+      rol: 🍺 PR-team
+      tekst: "lorem ipsum"
+    - naam: Axl Bedert
+      foto: axl.jpg
+      rol: 🍺 PR-team
+      tekst: "lorem ipsum"
 ---

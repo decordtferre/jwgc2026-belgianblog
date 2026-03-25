@@ -44,7 +44,7 @@
 .logo-text {
     font-family: "Montserrat", sans-serif;
     font-weight: 800 !important;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     color: #333 !important;
     text-transform: uppercase;
     white-space: nowrap;
@@ -57,7 +57,7 @@
 }
 
 #header.scrolled .logo-text {
-    font-size: 1.0rem !important;
+    font-size: 0.8rem !important;
 }
 
 #header .navbar-nav a,

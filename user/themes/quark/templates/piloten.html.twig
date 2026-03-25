@@ -34,9 +34,12 @@
                     <h2 style="margin-top: 0; font-weight: 800; color: #333;">{{ piloot.naam }}</h2>
 
                     {# Vlieginfo badges #}
-                    {# Vlieginfo badges #}
                     <div class="piloot-meta">
-                        ✈ {{ piloot.zweeftype }} | {{ piloot.immatriculatie }} | {{ piloot.competitienummer }}
+                        {% if piloot.rol %}
+                            {{ piloot.rol }}
+                        {% else %}
+                            ✈ {{ piloot.zweeftype }} | {{ piloot.immatriculatie }} | {{ piloot.competitienummer }}
+                            {% endif %}
                     </div>
 
                     {# Beschrijving #}

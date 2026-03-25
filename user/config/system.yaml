@@ -154,6 +154,7 @@ assets:
 errors:
   display: 1
   log: true
+  display: false
 log:
   handler: file
   syslog:
