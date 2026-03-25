@@ -31,10 +31,10 @@ piloten:
       tekst: "lorem ipsum"
     - naam: Ferre De Cordt
       foto: ferre.jpg
-      rol: 📷 PR-team
-      tekst: "lorem ipsum"
+      rol: 📸 PR-team
+      tekst: "Flying since the age of 14, Ferre brings solid competitive experience to the team. Besides being a skilled pilot, he is the driving force behind the team website and handles all sponsor relations. As a key guardian of the team spirit, he ensures a positive and focused atmosphere throughout the championships."
     - naam: Axl Bedert
       foto: axl.jpg
-      rol: 📷 PR-team
-      tekst: "lorem ipsum"
+      rol: 📸 PR-team
+      tekst: "Axl has practically lived on the airfield since he could walk. A true lifelong glider pilot, he now helps drive our social media presence and sponsor relations. With his endless energy and humor, he is the ultimate atmosphere maker of the Belgian team."
 ---

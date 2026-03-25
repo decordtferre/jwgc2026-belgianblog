@@ -30,7 +30,7 @@
                 </div>
 
                 {# Tekst Kolom — altijd links uitgelijnd #}
-                <div class="column col-7" style="text-align: left; padding: {{ is_even ? '0 3rem 0 0' : '0 0 0 3rem' }};">
+                <div class="column col-7" style="text-align: left; padding: {{ is_even ? '0 2rem 0 0' : '0 0 0 2rem' }};">
                     <h2 style="margin-top: 0; font-weight: 800; color: #333;">{{ piloot.naam }}</h2>
 
                     {# Vlieginfo badges #}
@@ -43,7 +43,7 @@
                     </div>
 
                     {# Beschrijving #}
-                    <div style="font-size: 1.1rem; line-height: 1.6; color: #555; margin-top: 0.75rem;">
+                    <div style="font-size: 0.8rem; line-height: 1.6; color: #555; margin-top: 0.3rem;">
                         {{ piloot.tekst|markdown }}
                     </div>
                 </div>
