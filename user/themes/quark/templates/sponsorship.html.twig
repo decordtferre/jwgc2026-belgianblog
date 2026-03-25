@@ -6,48 +6,69 @@
     .sponsor-page { 
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
         color: #1a1a1a; 
-        line-height: 1.5; /* Rustiger voor de ogen */
+        line-height: 1.5; 
         background: #fff; 
     }
-    .container-wide { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    /* Padding-top verlaagd naar 10px voor minder witruimte onder de zwarte banner */
+    .container-wide { max-width: 900px; margin: 0 auto; padding: 10px 20px 40px 20px; }
     
     /* Hero sectie bovenaan */
-    .hero-alt { background: #000; color: #fff; padding: 60px 20px; text-align: center; }
+    .hero-alt { background: #000; color: #fff; padding: 30px 20px; text-align: center; }
     .hero-alt h1 { color: #ffcc00; font-size: 2.2rem; margin-bottom: 5px; text-transform: uppercase; font-weight: 800; letter-spacing: -1px; }
     .hero-alt p { font-size: 1.1rem; opacity: 0.8; margin: 0; }
 
-    /* De introductie tekst (de tekst uit je .md file) */
+    /* De introductie tekst - margin-top op 0 gezet */
     .intro-text { 
-        font-size: 1.05rem; /* Kleiner en compacter */
+        font-size: 1.05rem; 
         text-align: left; 
         max-width: 750px; 
-        margin: 40px auto; 
+        margin: 0 auto 40px auto; 
         color: #333; 
     }
     .intro-text p { margin-bottom: 1.2rem; }
 
     /* De kaarten met voordelen */
-    .grid-benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 60px; }
+    .grid-benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
     .benefit-card { background: #fdfdfd; padding: 25px; border: 1px solid #eee; border-top: 3px solid #ffcc00; border-radius: 4px; }
-    .benefit-card h3 { margin-top: 0; color: #000; font-size: 1.15rem; margin-bottom: 10px; }
+    .benefit-card h3 { margin-top: 0; color: #000; font-size: 1.15rem; margin-bottom: 5px; }
     .benefit-card p { font-size: 0.95rem; color: #555; margin: 0; line-height: 1.4; }
 
     /* De zwarte box met mogelijkheden */
-    .offer-box { background: #1a1a1a; color: #fff; padding: 40px; border-radius: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 60px; }
-    .offer-box h2 { color: #ffcc00; grid-column: 1 / -1; margin-top: 0; font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 10px; }
+    .offer-box { background: #1a1a1a; color: #fff; padding: 30px; border-radius: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+    .offer-box h2 { color: #ffcc00; grid-column: 1 / -1; margin-top: 0; font-size: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 20px; }
+    .offer-box h4 { margin-top: 0; margin-bottom: 15px; color: #ffcc00; text-transform: uppercase; letter-spacing: 0.5px; } 
+    
     .offer-list { list-style: none; padding: 0; margin: 0; }
     .offer-list li { margin-bottom: 8px; font-size: 0.95rem; display: flex; align-items: flex-start; }
     .offer-list li::before { content: "✓"; color: #ffcc00; font-weight: bold; margin-right: 12px; }
 
-    /* Contact knop */
+    /* Contact sectie */
     .cta-section { text-align: center; padding: 50px 20px; background: #f9f9f9; border-radius: 8px; }
-    .btn-sponsor { background: #ffcc00; color: #000; padding: 14px 35px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 1rem; display: inline-block; transition: 0.2s; }
+    .btn-sponsor { background: #ffcc00; color: #000; padding: 14px 35px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 1rem; display: inline-block; transition: 0.2s; margin-bottom: 30px; }
     .btn-sponsor:hover { background: #e6b800; transform: translateY(-2px); }
 
-    /* Maak het leesbaar op mobiel */
+    /* Clickable contact links onderaan */
+    .contact-links { 
+        display: flex; 
+        justify-content: center; 
+        gap: 25px; 
+        flex-wrap: wrap; 
+        font-weight: bold; 
+        font-size: 0.95rem;
+    }
+    .contact-links a, .contact-links span { 
+        color: #1a1a1a; 
+        text-decoration: none; 
+        display: flex; 
+        align-items: center; 
+        gap: 8px; 
+    }
+    .contact-links a:hover { color: #005596; text-decoration: underline; }
+
     @media (max-width: 768px) {
-        .offer-box { grid-template-columns: 1fr; }
+        .offer-box { grid-template-columns: 1fr; gap: 20px; }
         .hero-alt h1 { font-size: 1.8rem; }
+        .contact-links { flex-direction: column; gap: 10px; }
     }
 </style>
 
@@ -73,7 +94,7 @@
         <section class="offer-box">
             <h2>Sponsorship Opportunities</h2>
             <div>
-                <h4 style="color: #ffcc00; text-transform: uppercase;">How you can help</h4>
+                <h4>How you can help</h4>
                 <ul class="offer-list">
                     {% for item in page.header.opportunities.help %}
                     <li>{{ item }}</li>
@@ -81,7 +102,7 @@
                 </ul>
             </div>
             <div>
-                <h4 style="color: #ffcc00; text-transform: uppercase;">What we offer</h4>
+                <h4>What we offer</h4>
                 <ul class="offer-list">
                     {% for item in page.header.opportunities.return %}
                     <li>{{ item }}</li>
@@ -91,11 +112,17 @@
         </section>
 
         <section class="cta-section">
-            <h2 style="margin-top:0;">Ready to partner with us?</h2>
-            <p style="margin-bottom: 30px;">Let’s discuss how we can represent your brand on the world stage.</p>
+            <h2 style="margin-top:0; margin-bottom: 10px;">Ready to partner with us?</h2>
+            <p style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Let’s discuss how we can represent your brand on the world stage.
+            </p>
+            
             <a href="mailto:{{ page.header.contact_email }}" class="btn-sponsor">Contact the PR Team</a>
-            <div style="margin-top: 30px; font-weight: bold;">
-                {{ page.header.phone }} | {{ page.header.website }} | {{page.header.contact_email}}
+            
+            <div class="contact-links">
+                <span>📞 {{ page.header.phone }}</span>
+                <a href="https://{{ page.header.website }}" target="_blank">🌐 {{ page.header.website }}</a>
+                <a href="mailto:{{ page.header.contact_email }}">✉️ {{ page.header.contact_email }}</a>
             </div>
         </section>
     </div>

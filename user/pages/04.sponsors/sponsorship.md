@@ -8,10 +8,10 @@ website: "www.belgianjuniors.be"
 
 # Dit gedeelte wordt door Twig gebruikt voor de specifieke blokken
 benefits:
-    - title: "Belgian Excellence"
+    - title: "Belgian excellence"
       text: "Support top-tier national talent on the world stage against 20+ nations."
       icon: "fa-trophy"
-    - title: "Innovation & Tech"
+    - title: "Innovation & tech"
       text: "Connecting your brand to sustainable aviation, aerodynamics, and precision engineering."
       icon: "fa-lightbulb-o"
     - title: "Visibility"
@@ -22,10 +22,10 @@ opportunities:
     help:
         - "Financial support for operational costs"
         - "Branded teamwear for the world stage"
-        - "Logistical support and transport"
+        - "Logistical support"
         - "Custom technical partnerships"
     return:
-        - "High-visibility Logo placement"
+        - "High-visibility logo placement"
         - "Daily digital reach via our blog"
         - "Premium content for your CSR marketing"
         - "Direct link to Belgian industry talent"

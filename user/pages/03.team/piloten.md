@@ -31,10 +31,10 @@ piloten:
       tekst: "lorem ipsum"
     - naam: Ferre De Cordt
       foto: ferre.jpg
-      rol: 🍺 PR-team
+      rol: 📷 PR-team
       tekst: "lorem ipsum"
     - naam: Axl Bedert
       foto: axl.jpg
-      rol: 🍺 PR-team
+      rol: 📷 PR-team
       tekst: "lorem ipsum"
 ---
