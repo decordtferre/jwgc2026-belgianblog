@@ -1,17 +1,18 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-<section class="container grid-lg" style="padding-top: 0;">
+<section class="container grid-lg pilot-section">
     <div class="piloten-lijst">
         {{ page.content|raw }}
 
         {% for piloot in page.header.piloten %}
             {% set is_even = loop.index is even %}
             
-            <div class="columns" style="display: flex; align-items: flex-start; margin-bottom: 4rem; flex-direction: {{ is_even ? 'row-reverse' : 'row' }};">
+            {# We use a simple class 'piloot-row' and 'is-reversed' instead of inline flex #}
+            <div class="piloot-row {{ is_even ? 'is-reversed' : '' }}">
                 
                 {# Foto Kolom #}
-                <div class="column col-5">
+                <div class="piloot-column photo-col">
                     {% set image = page.media[piloot.foto] ?: page.media.images[piloot.foto] %}
                     
                     {% if image %}
@@ -19,31 +20,28 @@
                             {{ image.html('', piloot.naam, 'img-responsive s-rounded shadow-lg')|raw }}
                         </div>
                     {% else %}
-                        <div style="background: #f0f0f0; border: 1px dashed #ccc; padding: 20px; border-radius: 8px; text-align: center;">
-                            <p style="color: #666; font-size: 0.9rem;">
+                        <div class="missing-image">
+                            <p>
                                 <strong>{{ piloot.naam }}</strong><br>
-                                Zoekt naar: <code>{{ piloot.foto }}</code><br>
-                                <small>Kijkt in: <code>{{ page.relative_path }}</code></small>
+                                Missing: <code>{{ piloot.foto }}</code>
                             </p>
                         </div>
                     {% endif %}
                 </div>
 
-                {# Tekst Kolom — altijd links uitgelijnd #}
-                <div class="column col-7" style="text-align: left; padding: {{ is_even ? '0 2rem 0 0' : '0 0 0 2rem' }};">
-                    <h2 style="margin-top: 0; font-weight: 800; color: #333;">{{ piloot.naam }}</h2>
+                {# Tekst Kolom #}
+                <div class="piloot-column text-col">
+                    <h2 class="piloot-naam">{{ piloot.naam }}</h2>
 
-                    {# Vlieginfo badges #}
                     <div class="piloot-meta">
                         {% if piloot.rol %}
                             {{ piloot.rol }}
                         {% else %}
                             ✈ {{ piloot.zweeftype }} | {{ piloot.immatriculatie }} | {{ piloot.competitienummer }}
-                            {% endif %}
+                        {% endif %}
                     </div>
 
-                    {# Beschrijving #}
-                    <div style="font-size: 0.8rem; line-height: 1.6; color: #555; margin-top: 0.3rem;">
+                    <div class="piloot-description">
                         {{ piloot.tekst|markdown }}
                     </div>
                 </div>
@@ -54,17 +52,80 @@
 </section>
 
 <style>
-    .img-responsive.s-rounded {
-        transition: transform 0.3s ease;
+    .pilot-section { padding-top: 2rem; }
+    
+    /* DESKTOP LAYOUT */
+    .piloot-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6rem;
+        gap: 4rem;
     }
-    .img-responsive.s-rounded:hover {
-        transform: scale(1.02);
-    }
-    .shadow-lg {
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    
+    .piloot-row.is-reversed {
+        flex-direction: row-reverse;
     }
 
-    /* Vlieginfo badges */
+    .piloot-column { flex: 1; }
+    .photo-col { max-width: 45%; }
+    
+    .piloot-naam { 
+        margin-top: 0; 
+        font-weight: 800; 
+        color: #333; 
+        font-size: 2.2rem;
+    }
+
+    /* MOBILE FIX (Screen smaller than 850px) */
+    @media (max-width: 850px) {
+        .piloot-row {
+            display: flex;
+            flex-direction: column !important; 
+            margin-bottom: 4rem;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        /* We gebruiken 'order' om de elementen te verschuiven */
+        .text-col h2, .text-col .piloot-meta {
+            order: 1; /* Deze gaan naar boven */
+        }
+
+        .photo-col {
+            order: 2; /* Foto komt in het midden */
+            max-width: 100%;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .text-col .piloot-description {
+            order: 3; /* De 'lorem ipsum' tekst komt onderaan */
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        /* Zorg dat de tekst-kolom zelf ook als flexbox werkt voor de 'order' */
+        .text-col {
+            display: flex;
+            flex-direction: column;
+            padding: 0 !important;
+        }
+
+        .piloot-naam {
+            font-size: 1.8rem;
+            margin-bottom: 0.2rem !important;
+        }
+    }
+
+    /* General Styling */
+    .img-responsive.s-rounded {
+        transition: transform 0.3s ease;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .shadow-lg { box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important; }
+
     .piloot-meta {
         display: inline-block;
         border: 1px solid #ddd;
@@ -72,18 +133,22 @@
         padding: 0.25rem 0.75rem;
         font-size: 0.85rem;
         color: #444;
-        margin-top: 0.25rem;
-        margin-bottom: 0.5rem;
-}
-    .meta-badge {
-        display: inline-block;
-        background: #f0f0f0;
-        border: 1px solid #ddd;
-        border-radius: 20px;
-        padding: 0.2rem 0.75rem;
-        font-size: 0.85rem;
-        color: #444;
-        font-weight: 500;
+        background: #fdfdfd;
+    }
+
+    .piloot-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #555;
+        margin-top: 1rem;
+    }
+
+    .missing-image {
+        background: #f0f0f0; 
+        border: 1px dashed #ccc; 
+        padding: 40px 20px; 
+        border-radius: 8px; 
+        text-align: center;
     }
 </style>
 {% endblock %}
