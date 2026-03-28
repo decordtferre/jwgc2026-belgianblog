@@ -6,7 +6,7 @@ piloten:
       immatriculatie: OO-ZTQ
       competitienummer: TQ
       zweeftype: LS-4
-      tekst: "lorem ipsum"
+      tekst: "Michiel’s passion for aviation runs in his DNA. Inspired by his father, a professional pilot and former glider pilot at Albatros, he took his first flight at age 12 and joined the club a year later. What started as a hobby has since become his profession, allowing him to fully dedicate his free time to gliding and competitive flying. With the Junior World Gliding Championship ahead, he is eager to challenge himself against the world’s top junior pilots and continue improving his performance."
     - naam: Edwige Colson
       foto: edwige.jpg
       immatriculatie: D-2061
@@ -18,7 +18,7 @@ piloten:
       immatriculatie: D-0526
       competitienummer: LX
       zweeftype: LS-4
-      tekst: "Honing his skills since taking the controls at just 14, he now flies out of Zoersel with a strong drive for competitive soaring in the LS4 (LV). Wannes lives for the tactical game in the air and isn't afraid to push the limits to find that extra bit of speed, even if it occasionally means scouting out a good farmer's field. He’s heading into this year’s JWGC ready to give it his all and represent the Belgian Juniors on the world stage."
+      tekst: "Honing his skills since taking the controls at just 14, he now flies out of Zoersel with a strong drive for competitive soaring in the LS4 (LV). Currently studying to become an engineer, Wannes lives for the tactical game in the air and isn't afraid to push the limits to find that extra bit of speed, even if it occasionally means scouting out a good farmer's field. He’s heading into this year’s JWGC ready to give it his all and represent the Belgian Juniors on the world stage."
     - naam: Virginie Valck
       foto: virginie.jpg
       immatriculatie: OO-YKH
