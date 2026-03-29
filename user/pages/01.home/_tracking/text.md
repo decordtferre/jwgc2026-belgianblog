@@ -10,27 +10,29 @@ title: Live Tracking
 <div class="pilot-tracking-container" style="text-align: center; margin-top: 30px; font-family: sans-serif;">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
         
-        <a href="https://glideandseek.com/?deviceid=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+        <a href="https://glideandseek.com/?aircraft=3E6019" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
             <strong style="display: block; font-size: 1.1em;">Michiel Haemels</strong>
-            <small style="color: #5dade2;">Callsign: TQ</small>
+            <small style="color: #C8102E;">Callsign: TQ</small>
         </a>
 
-        <a href="https://glideandseek.com/?deviceid=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+        <a href="https://glideandseek.com/?aircraft=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
             <strong style="display: block; font-size: 1.1em;">Edwige Colson</strong>
-            <small style="color: #5dade2;">Callsign: Vne</small>
+            <small style="color: #C8102E;">Callsign: Vne</small>
         </a>
 
-        <a href="https://glideandseek.com/?deviceid=DDAB29" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+        <a href="https://glideandseek.com/?aircraft=DDAB29" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
             <strong style="display: block; font-size: 1.1em;">Wannes Smits</strong>
-            <small style="color: #5dade2;">Callsign: LV</small>
+            <small style="color: #C8102E;">Callsign: LV</small>
         </a>
 
-        <a href="https://glideandseek.com/?deviceid=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+        <a href="https://glideandseek.com/?aircraft=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
             <strong style="display: block; font-size: 1.1em;">Virginie Valck</strong>
-            <small style="color: #5dade2;">Callsign: KH</small>
+            <small style="color: #C8102E;">Callsign: KH</small>
         </a>
 
     </div>
 </div>
+<section class="section py-3" style="padding-top: 0px; padding-bottom: 15px;">
+</section>
 
 **Note:** Tracking might be delayed by a few minutes depending on the competition's "live-track" security settings.
