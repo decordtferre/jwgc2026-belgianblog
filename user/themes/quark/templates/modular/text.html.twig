@@ -1,21 +1,72 @@
 {% set grid_size = theme_var('grid-size') %}
 {% set image = page.media.images|first %}
 
-<section class="section modular-text {{ page.header.class}} bg-gray">
+<section class="section modular-text {{ page.header.class}} py-3">
     <section class="container {{ grid_size }}">
-        <div class="columns {{ page.header.image_align|default('align-right') }}">
+        {# 'align-items: flex-end' zorgt dat de kolommen onderaan uitlijnen #}
+        <div class="columns" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;">
+            
             {% if image %}
-            <div class="column col-6 col-md-12">
-                {{ content|raw }}
+            {# Tekst Kolom (Col-7: 7/12de breedte) #}
+            <div class="column col-7 col-md-12" style="padding: 1rem;">
+                <div class="text-content" style="padding-bottom: 0;">
+                    {{ content|raw }}
+                </div>
             </div>
-            <div class="column col-6 col-md-12">
-                {{ image.html|raw }}
+
+            {# Afbeelding Kolom (Col-5: 5/12de breedte) #}
+            {# 'position: relative' is belangrijk voor de absolute positionering #}
+            <div class="column col-5 col-md-12" style="position: relative; padding: 0;">
+                {# We verwijderen de witte card-wrapper en de shadow #}
+                <div class="image-wrapper" style="line-height: 0; width: 100%;">
+                    {# We voegen hier inline CSS toe om de afbeelding zelf te dwingen #}
+                    {# 'position: absolute' en 'bottom: 0' zetten de foto op de bodem #}
+                    {# We passen afronding en een strakkere schaduw direct toe op de IMG-tag #}
+                    {{ image.html('','','img-responsive', 'style="width: 100%; height: auto; display: block; margin: 0; position: absolute; bottom: 0; left: 0; right: 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"')|raw }}
+                </div>
             </div>
             {% else %}
             <div class="column col-12">
                 {{ content|raw }}
             </div>
             {% endif %}
+            
         </div>
     </section>
 </section>
+
+<style>
+    /* Dwingt de afbeelding om de volle breedte van de col-5 te nemen and mee te schalen */
+    .img-responsive {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
+
+    /* Op mobiel zetten we de flexbox uit voor een betere stapeling */
+    @media (max-width: 840px) {
+        .columns {
+            display: block !important;
+        }
+        .column {
+            width: 100% !important;
+            margin-bottom: 2rem;
+            padding: 1rem 0 !important;
+        }
+        /* Op mobiel de absolute positionering uitzetten en centreren */
+        .column.col-5 {
+            position: static !important;
+            text-align: center;
+        }
+        .image-wrapper {
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative; /* Zorgt dat de absolute positionering binnen deze wrapper werkt op mobiel */
+        }
+        /* De absolute positie blijft ook op mobiel, maar we willen geen padding eronder */
+        .img-responsive {
+            position: static !important;
+        }
+    }
+</style>

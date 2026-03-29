@@ -5,6 +5,32 @@ title: Live Tracking
 
 # Live Tracking
 
-<iframe src="https://glideandseek.com/?embed=localhost:8080&viewport=48.77,10.26,10" width="100%" height="500px" style="border:none; border-radius: 10px;" allow="geolocation"></iframe>
+<iframe name="tracker_iframe" id="tracker_iframe" src="https://glideandseek.com/?embed=localhost:8080&viewport=48.77,10.26,10" width="100%" height="500px" style="border:none; border-radius: 10px;" allow="geolocation"></iframe>
 
-> **Note:** Tracking might be delayed by a few minutes depending on the competition's "live-track" security settings.
+<div class="pilot-tracking-container" style="text-align: center; margin-top: 30px; font-family: sans-serif;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+        
+        <a href="https://glideandseek.com/?deviceid=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+            <strong style="display: block; font-size: 1.1em;">Michiel Haemels</strong>
+            <small style="color: #5dade2;">Callsign: TQ</small>
+        </a>
+
+        <a href="https://glideandseek.com/?deviceid=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+            <strong style="display: block; font-size: 1.1em;">Edwige Colson</strong>
+            <small style="color: #5dade2;">Callsign: Vne</small>
+        </a>
+
+        <a href="https://glideandseek.com/?deviceid=DDAB29" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+            <strong style="display: block; font-size: 1.1em;">Wannes Smits</strong>
+            <small style="color: #5dade2;">Callsign: LV</small>
+        </a>
+
+        <a href="https://glideandseek.com/?deviceid=DDAB30" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+            <strong style="display: block; font-size: 1.1em;">Virginie Valck</strong>
+            <small style="color: #5dade2;">Callsign: KH</small>
+        </a>
+
+    </div>
+</div>
+
+**Note:** Tracking might be delayed by a few minutes depending on the competition's "live-track" security settings.
