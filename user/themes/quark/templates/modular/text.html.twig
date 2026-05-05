@@ -3,25 +3,17 @@
 
 <section class="section modular-text {{ page.header.class}} py-3">
     <section class="container {{ grid_size }}">
-        {# 'align-items: flex-end' zorgt dat de kolommen onderaan uitlijnen #}
         <div class="columns" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;">
             
             {% if image %}
-            {# Tekst Kolom (Col-7: 7/12de breedte) #}
             <div class="column col-7 col-md-12" style="padding: 1rem;">
                 <div class="text-content" style="padding-bottom: 0;">
                     {{ content|raw }}
                 </div>
             </div>
 
-            {# Afbeelding Kolom (Col-5: 5/12de breedte) #}
-            {# 'position: relative' is belangrijk voor de absolute positionering #}
             <div class="column col-5 col-md-12" style="position: relative; padding: 0;">
-                {# We verwijderen de witte card-wrapper en de shadow #}
                 <div class="image-wrapper" style="line-height: 0; width: 100%;">
-                    {# We voegen hier inline CSS toe om de afbeelding zelf te dwingen #}
-                    {# 'position: absolute' en 'bottom: 0' zetten de foto op de bodem #}
-                    {# We passen afronding en een strakkere schaduw direct toe op de IMG-tag #}
                     {{ image.html('','','img-responsive', 'style="width: 100%; height: auto; display: block; margin: 0; position: absolute; bottom: 0; left: 0; right: 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"')|raw }}
                 </div>
             </div>
@@ -35,8 +27,34 @@
     </section>
 </section>
 
+{# ── Sponsor Carousel ── #}
+{% set sponsor_logos = [
+    'redbull.png',
+    'jako.png',
+    'fulfil.png'
+] %}
+
+<section id="sponsors" class="section py-3">
+    <div class="container {{ grid_size }}" style="text-align: center;">
+        <div class="sponsor-track-wrapper">
+            <div class="sponsor-track">
+                {% for logo in sponsor_logos %}
+                    <div class="sponsor-slide">
+                        <img src="{{ base_url }}/user/themes/quark/images/sponsor_logos/{{ logo }}" alt="{{ logo|split('.')|first }}">
+                    </div>
+                {% endfor %}
+                {# Duplicate for seamless infinite loop #}
+                {% for logo in sponsor_logos %}
+                    <div class="sponsor-slide">
+                        <img src="{{ base_url }}/user/themes/quark/images/sponsor_logos/{{ logo }}" alt="{{ logo|split('.')|first }}">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
 <style>
-    /* Dwingt de afbeelding om de volle breedte van de col-5 te nemen and mee te schalen */
     .img-responsive {
         width: 100% !important;
         max-width: 100% !important;
@@ -44,7 +62,49 @@
         display: block;
     }
 
-    /* Op mobiel zetten we de flexbox uit voor een betere stapeling */
+    /* ── Sponsor Carousel ── */
+    .sponsor-track-wrapper {
+        overflow: hidden;
+        width: 100%;
+        padding: 0.5rem 0;
+        /* Fade edges for a polished look */
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+    .sponsor-track {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        width: max-content;
+        animation: scroll-sponsors 25s linear infinite;
+    }
+    .sponsor-track:hover {
+        animation-play-state: paused;
+    }
+    .sponsor-slide {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sponsor-slide img {
+        max-height: 70px;
+        max-width: 150px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        filter: grayscale(40%) opacity(75%);
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    .sponsor-slide img:hover {
+        filter: grayscale(0%) opacity(100%);
+        transform: scale(1.08);
+    }
+    @keyframes scroll-sponsors {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
     @media (max-width: 840px) {
         .columns {
             display: block !important;
@@ -54,7 +114,6 @@
             margin-bottom: 2rem;
             padding: 1rem 0 !important;
         }
-        /* Op mobiel de absolute positionering uitzetten en centreren */
         .column.col-5 {
             position: static !important;
             text-align: center;
@@ -62,11 +121,17 @@
         .image-wrapper {
             max-width: 400px;
             margin: 0 auto;
-            position: relative; /* Zorgt dat de absolute positionering binnen deze wrapper werkt op mobiel */
+            position: relative;
         }
-        /* De absolute positie blijft ook op mobiel, maar we willen geen padding eronder */
         .img-responsive {
             position: static !important;
+        }
+        .sponsor-track {
+            gap: 2.5rem;
+        }
+        .sponsor-slide img {
+            max-height: 50px;
+            max-width: 110px;
         }
     }
 </style>
