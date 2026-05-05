@@ -25,6 +25,10 @@ piloten:
       competitienummer: KH
       zweeftype: LS-4
       tekst: "Virginie discovered gliding at the age of 12 and has been hooked ever since. What started as curiosity quickly grew into a true passion. Over the years, she has become an active competition pilot and, more recently, one of the youngest gliding instructors in Belgium. Beyond flying, Virginie is deeply involved in her club and committed to making aviation more accessible, especially for young pilots and women. She actively works to inspire others to take their first steps into the cockpit and feel at home in the sport. As she prepares for the Junior World Gliding Championships in Aalen, Virginie is eager to challenge herself at the highest level, gain experience, and continue growing as both a pilot and an ambassador for the sport."
+    - naam: Guillaume Dohet
+      foto: guillaume.jpg
+      rol: 🌟 Team Captain
+      tekst: "Guillaume's path into aviation began with the Royal Belgian Air Cadets, where an early fascination with the sky grew into a lifelong calling. That passion took him all the way to the flight deck — he now serves as a First Officer with Air France, turning what started as a cadet's dream into a professional career at altitude. On the ground, Guillaume brings that same focus and discipline to his role as Team Captain of the Belgian Junior Gliding Team. Steering the team through the preparations and pressures of the JWGC, he leads with the confidence of someone who knows exactly what it takes to perform at the highest level."
     - naam: Ferre De Cordt
       foto: ferre.jpg
       rol: 📸 PR-team
