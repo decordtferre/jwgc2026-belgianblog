@@ -2,7 +2,7 @@
 title: Support the Belgian Junior Gliding Team
 menu: Sponsorship
 template: sponsorship
-contact_email: "gliding@belgianjuniors.be"
+contact_email: "belgianjuniorglidingteam@gmail.com"
 phone: "+32 471 99 28 90"
 website: "www.belgianjuniors.be"
 
