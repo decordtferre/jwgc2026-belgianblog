@@ -1,5 +1,6 @@
 ---
 title: Live Tracking
+show_sponsors: true
 ---
 <div id="tracking" style="position: relative; top: -100px;"></div>
 

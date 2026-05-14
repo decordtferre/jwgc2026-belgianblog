@@ -1,0 +1,93 @@
+{% set sponsors = [
+    { logo: 'redbull.png',  url: 'https://www.redbull.com' },
+    { logo: 'jako.png',     url: 'https://www.jako.com' },
+    { logo: 'fulfil.png',   url: 'https://www.fulfilnutrition.be' }
+] %}
+
+<section id="sponsors" class="section py-3">
+    <div class="container {{ grid_size }}">
+        <div class="sponsor-track-wrapper">
+            <div class="sponsor-track">
+                {% for sponsor in sponsors %}
+                    <div class="sponsor-slide">
+                        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ base_url }}/user/themes/quark/images/sponsor_logos/{{ sponsor.logo }}"
+                                 alt="{{ sponsor.logo|split('.')|first }}">
+                        </a>
+                    </div>
+                {% endfor %}
+                {% for sponsor in sponsors %}
+                    <div class="sponsor-slide">
+                        <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ base_url }}/user/themes/quark/images/sponsor_logos/{{ sponsor.logo }}"
+                                 alt="{{ sponsor.logo|split('.')|first }}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .sponsor-track-wrapper {
+        overflow: hidden;
+        width: 100%;
+        padding: 0.5rem 0;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+    .sponsor-track {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        width: max-content;
+        will-change: transform;
+    }
+    .sponsor-slide { flex-shrink: 0; display: flex; align-items: center; }
+    .sponsor-slide a { display: flex; align-items: center; text-decoration: none; }
+    .sponsor-slide img {
+        max-height: 110px;
+        max-width: 220px;
+        width: auto; height: auto;
+        object-fit: contain;
+        filter: grayscale(40%) opacity(75%);
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    .sponsor-slide img:hover {
+        filter: grayscale(0%) opacity(100%);
+        transform: scale(1.08);
+    }
+    @media (max-width: 1000px) {
+        .sponsor-slide img { max-height: 50px; max-width: 110px; }
+    }
+</style>
+
+<script>
+(function () {
+    const speed = 0.5;
+    document.querySelectorAll('.sponsor-track').forEach(function(track) {
+        var offset = 0, paused = false, halfWidth = null;
+        function getHalfWidth() {
+            var slides = track.querySelectorAll('.sponsor-slide');
+            var gap = parseFloat(getComputedStyle(track).gap) || 64;
+            var total = 0;
+            for (var i = 0; i < slides.length / 2; i++) total += slides[i].offsetWidth + gap;
+            return total;
+        }
+        function tick() {
+            if (!paused) {
+                if (halfWidth === null) halfWidth = getHalfWidth();
+                offset += speed;
+                if (offset >= halfWidth) offset -= halfWidth;
+                track.style.transform = 'translateX(-' + offset + 'px)';
+            }
+            requestAnimationFrame(tick);
+        }
+        track.addEventListener('mouseenter', function() { paused = true; });
+        track.addEventListener('mouseleave', function() { paused = false; });
+        window.addEventListener('resize', function() { halfWidth = null; });
+        requestAnimationFrame(tick);
+    });
+})();
+</script>

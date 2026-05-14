@@ -3,16 +3,7 @@ title: JWGC 2026 Germany
 image_align: right
 published: true
 visible: false
-sponsors:
-    - logo: redbull.png
-      name: Red Bull
-      url: https://www.redbull.com/be-nl
-    - logo: jako.png
-      name: Jako
-      url: https://www.jako.com/be-nl/
-    - logo: fulfil.png
-      name: Ful Fil
-      url: https://www.fulfilnutrition.be/
+show_sponsors: true
 ---
 
 # Follow the Belgian juniors!

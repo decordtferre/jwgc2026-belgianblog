@@ -37,4 +37,8 @@ piloten:
       foto: axl.jpg
       rol: 📸 PR-team
       tekst: "Axl has practically lived on the airfield since he could walk. A true lifelong glider pilot, he now helps drive our social media presence and sponsor relations. With his endless energy and humor, he is the ultimate atmosphere maker of the Belgian team."
+    - naam: Gear Up
+      foto: gearup.jpg
+      rol: 🐶 Team Mascotte
+      tekst: "Gear Up, the American Shepherd of Edwige & Guillaume, has officially earned his spot on the team - and yes, he's coming along to the JWGC. Gear Up keeps morale high on the ground while the rest of the team takes to the skies! We're not sure he fully understands gliding yet, but he's working on it."
 ---

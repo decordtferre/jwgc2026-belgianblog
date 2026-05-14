@@ -1,6 +1,7 @@
 ---
 title: Results
 id: results
+show_sponsors: false
 ---
 
 # Results
