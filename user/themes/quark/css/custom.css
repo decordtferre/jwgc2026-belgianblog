@@ -8,7 +8,7 @@
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    padding: 30px 0;
     display: flex !important;
     align-items: center !important;
     min-height: 80px;
@@ -70,7 +70,7 @@
    2. PAGE STRUCTURE & SPACING
    ========================================================================== */
 body {
-    padding-top: 80px !important;
+    padding-top: 60px !important;
 }
 
 #body-wrapper.section {
@@ -80,7 +80,7 @@ body {
 
 .section.modular-text {
     padding-top: 0rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 p {
@@ -177,7 +177,7 @@ iframe {
 
 /* Algemene overlay styles */
 body.mobile-nav-open #mobile-menu {
-    padding-top: 60px !important;
+    padding-top: 30px !important;
 }
 
 /* De lijst-container (werkt voor zowel .tree als .menu-nav) */
@@ -331,3 +331,50 @@ body.mobile-nav-open .mobile-menu-close {
 }
 }
 
+@media (max-width: 768px) {
+    .pilot-tracking-container > div {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 0 1rem;
+    }
+
+    .pilot-tracking-container > div > a {
+        min-width: unset !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .section.modular-text.py-3 {
+        padding-top: 0 !important;
+    }
+    
+    #header.section {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .hero-section,
+    #hero {
+        padding-top: 0 !important;
+        min-height: unset !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .column.col-7.col-md-12 {
+        padding: 0 !important;
+    }
+}
+
+.text-col-main {
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .text-col-main {
+        padding-top: 0;
+    }
+}
