@@ -30,5 +30,5 @@ Key directories for development:
 ---
 
 **PR Team:** Ferre De Cordt & Axl Bedert  
-**Inquiries:** [gliding@belgianjuniors.be](mailto:gliding@belgianjuniors.be)  
+**Inquiries:** [belgianjuniorglidingteam@gmail.com](mailto:belgianjuniorglidingteam@gmail.com)  
 **Official Website:** [www.belgianjuniors.be](https://www.belgianjuniors.be)
