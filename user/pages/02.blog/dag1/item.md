@@ -1,6 +1,7 @@
 ---
 title: 'Day 1: The Journey Begins'
 date: '27-07-2026 18:00'
+published: true
 taxonomy:
     category: blog
 ---

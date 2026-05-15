@@ -2,6 +2,7 @@
 title: JWGC 2026 Blog
 visible: false
 routable: true
+show_sponsors: true
 menu: Blog
 content:
     items: '@self.children'

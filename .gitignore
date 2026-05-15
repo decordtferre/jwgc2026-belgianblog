@@ -8,6 +8,7 @@ webhook_token.txt
 /bin/
 /cache/
 /logs/
+/logs/popularity/
 /images/
 /system/
 /vendor/
