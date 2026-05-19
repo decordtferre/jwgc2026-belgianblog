@@ -11,6 +11,8 @@ metadata:
     'og:title': 'Support the Belgian Junior Gliding Team'
     'og:description': 'Support the Belgian Junior Gliding Team at the JWGC 2026 in Aalen, Germany.'
     'og:image': https://www.belgianjuniors.be/user/themes/quark/images/logo/logo.png
+    'og:url': 'https://www.belgianjuniors.be/sponsors'
+    'og:type': 'website'
 
 # Dit gedeelte wordt door Twig gebruikt voor de specifieke blokken
 benefits:
