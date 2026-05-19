@@ -6,6 +6,11 @@ contact_email: "belgianjuniorglidingteam@gmail.com"
 phone: "+32 471 99 28 90"
 website: "www.belgianjuniors.be"
 
+description: 'Support the Belgian Junior Gliding Team at the JWGC 2026 in Aalen, Germany.'
+metadata:
+    'og:title': 'Support the Belgian Junior Gliding Team'
+    'og:description': 'Support the Belgian Junior Gliding Team at the JWGC 2026 in Aalen, Germany.'
+
 # Dit gedeelte wordt door Twig gebruikt voor de specifieke blokken
 benefits:
     - title: "Belgian excellence"
