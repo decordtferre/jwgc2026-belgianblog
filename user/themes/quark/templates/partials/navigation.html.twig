@@ -1,7 +1,11 @@
 <ul class="navigation">
+    {# Home knop #}
+    <li class="{{ page.home ? 'active' : '' }}">
+        <a href="{{ base_url == '' ? '/' : base_url }}">Home</a>
+    </li>
+
     {# De dynamische pagina's (Blog) #}
     {% for page in pages.children.visible %}
-        {# We filteren Home EN Pictures eruit #}
         {% if not page.home and page.menu|lower != 'pictures' %}
             <li class="{{ page.active ? 'active' : '' }}">
                 <a href="{{ page.url }}">{{ page.menu }}</a>
@@ -10,7 +14,6 @@
     {% endfor %}
 
     {# De handmatige links naar de secties op de homepagina #}
-    {# De '/' zorgt ervoor dat hij altijd eerst naar de homepage gaat #}
     <li><a href="{{ base_url == '' ? '/' : base_url }}#tracking">Live Tracking</a></li>
     <li><a href="{{ base_url == '' ? '/' : base_url }}#results">Results</a></li>
 </ul>
