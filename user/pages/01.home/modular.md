@@ -11,4 +11,7 @@ content:
             - _welcome
             - _tracking
             - _results
+metadata:
+    'og:title': 'JWGC 2026 - Belgian Juniors'
+    'og:description': 'Follow the Belgian Junior Gliding Team at the JWGC 2026 in Aalen, Germany.'
 ---
