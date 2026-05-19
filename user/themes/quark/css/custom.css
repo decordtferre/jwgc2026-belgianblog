@@ -378,3 +378,23 @@ body.mobile-nav-open .mobile-menu-close {
         padding-top: 0;
     }
 }
+
+nav.navbar {
+    justify-content: flex-start !important;
+}
+
+section.navbar-section.logo {
+    flex: 0 0 auto !important;
+    margin-right: auto !important;
+}
+
+#header .container.grid-lg {
+    max-width: 1100px !important;
+    padding-left: 0rem !important;
+}
+
+#body-wrapper .container.grid-lg,
+#body-wrapper .container {
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+}

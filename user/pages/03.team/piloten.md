@@ -28,7 +28,7 @@ piloten:
     - naam: Guillaume Dohet
       foto: guillaume.jpg
       rol: 🌟 Team Captain
-      tekst: "Guillaume's path into aviation began with the Royal Belgian Air Cadets, where an early fascination with the sky grew into a lifelong calling. That passion took him all the way to the flight deck — he now serves as a First Officer with Air France, turning what started as a cadet's dream into a professional career at altitude. On the ground, Guillaume brings that same focus and discipline to his role as Team Captain of the Belgian Junior Gliding Team. Steering the team through the preparations and pressures of the JWGC, he leads with the confidence of someone who knows exactly what it takes to perform at the highest level."
+      tekst: "Guillaume's path into aviation began with the Royal Belgian Air Cadets, where an early fascination with the sky grew into a lifelong calling. That passion took him all the way to the flight deck - he now serves as a First Officer with Air France, turning what started as a cadet's dream into a professional career at altitude. On the ground, Guillaume brings that same focus and discipline to his role as Team Captain of the Belgian Junior Gliding Team. Steering the team through the preparations and pressures of the JWGC, he leads with the confidence of someone who knows exactly what it takes to perform at the highest level."
     - naam: Ferre De Cordt
       foto: ferre.jpg
       rol: 📸 PR-team
