@@ -41,4 +41,11 @@ piloten:
       foto: gearup.jpg
       rol: 🐶 Team Mascotte
       tekst: "Gear Up, the American Shepherd of Edwige & Guillaume, has officially earned his spot on the team - and yes, he's coming along to the JWGC. Gear Up keeps morale high on the ground while the rest of the team takes to the skies! We're not sure he fully understands gliding yet, but he's working on it."
+
+metadata:
+    'og:title': 'Belgian Junior Gliding Team - Our Team'
+    'og:description': 'Overview of of the Belgian Junior Gliding Team'
+    'og:image': https://www.belgianjuniors.be/user/themes/quark/images/logo/logo.png
+    'og:url': 'https://www.belgianjuniors.be/team/'
+    'og:type': 'website'
 ---

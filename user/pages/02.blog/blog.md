@@ -11,6 +11,13 @@ content:
         by: last
         dir: desc
     pagination: true
+
+metadata:
+    'og:title': 'JWGC 2026 Blog'
+    'og:description': 'Blog of the Belgian Junior Gliding Team at the JWGC 2026 in Aalen, Germany.'
+    'og:image': https://www.belgianjuniors.be/user/themes/quark/images/logo/logo.png
+    'og:url': 'https://www.belgianjuniors.be/blog/'
+    'og:type': 'website'
 ---
 
 # Blog
