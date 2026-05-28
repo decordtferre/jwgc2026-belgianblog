@@ -26,7 +26,7 @@ show_sponsors: true
             <small style="color: #C8102E;">Callsign: LV</small>
         </a>
 
-        <a href="https://glideandseek.com/?aircraft=400305" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
+        <a href="https://glideandseek.com/?aircraft=484B25" target="tracker_iframe" style="text-decoration: none; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #2c3e50; padding: 15px 25px; border-radius: 12px; border: 2px solid rgba(44, 62, 80, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.05); min-width: 170px; display: inline-block;">
             <strong style="display: block; font-size: 1.1em;">Virginie Valck</strong>
             <small style="color: #C8102E;">Callsign: KH</small>
         </a>
