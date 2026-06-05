@@ -46,7 +46,15 @@
         gap: 4rem;
         align-items: center;
         width: max-content;
-        will-change: transform;
+        animation: sponsor-scroll 24s linear infinite;
+    }
+    /* Pauzeer via CSS hover — geen JS nodig */
+    .sponsor-track-wrapper:hover .sponsor-track {
+        animation-play-state: paused;
+    }
+    @keyframes sponsor-scroll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(var(--sponsor-half-width, -50%)); }
     }
     .sponsor-slide { flex-shrink: 0; display: flex; align-items: center; }
     .sponsor-slide a { display: flex; align-items: center; text-decoration: none; }
@@ -69,29 +77,32 @@
 
 <script>
 (function () {
-    const speed = 0.5;
-    document.querySelectorAll('.sponsor-track').forEach(function(track) {
-        var offset = 0, paused = false, halfWidth = null;
-        function getHalfWidth() {
+    function initCarousel(track) {
+        var wrapper = track.closest('.sponsor-track-wrapper');
+
+        function measure() {
             var slides = track.querySelectorAll('.sponsor-slide');
+            var n = Math.floor(slides.length / 2);
             var gap = parseFloat(getComputedStyle(track).gap) || 64;
             var total = 0;
-            for (var i = 0; i < slides.length / 2; i++) total += slides[i].offsetWidth + gap;
-            return total;
-        }
-        function tick() {
-            if (!paused) {
-                if (halfWidth === null) halfWidth = getHalfWidth();
-                offset += speed;
-                if (offset >= halfWidth) offset -= halfWidth;
-                track.style.transform = 'translateX(-' + offset + 'px)';
+            for (var i = 0; i < n; i++) {
+                total += slides[i].offsetWidth + gap;
             }
-            requestAnimationFrame(tick);
+            // CSS custom property instellen op de track
+            track.style.setProperty('--sponsor-half-width', '-' + total + 'px');
         }
-        track.addEventListener('mouseenter', function() { paused = true; });
-        track.addEventListener('mouseleave', function() { paused = false; });
-        window.addEventListener('resize', function() { halfWidth = null; });
-        requestAnimationFrame(tick);
-    });
+
+        // Wacht tot alle afbeeldingen geladen zijn
+        if (document.readyState === 'complete') {
+            measure();
+        } else {
+            window.addEventListener('load', measure);
+        }
+
+        // Herbereken bij resize (bv. font-scaling of zoom)
+        window.addEventListener('resize', measure);
+    }
+
+    document.querySelectorAll('.sponsor-track').forEach(initCarousel);
 })();
 </script>
