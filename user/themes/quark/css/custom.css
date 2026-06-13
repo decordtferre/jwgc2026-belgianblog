@@ -232,11 +232,31 @@ body.mobile-nav-open .mobile-menu-close {
    ========================================================================== */
 @media (max-width: 1100px) {
     body {
-        padding-top: 75px !important;
+        padding-top: 30px !important;
     }
 
     #header {
-        min-height: 65px !important;
+        min-height: 40px !important;
+        height: auto !important; /* HERSTELD: voorkomt dat de header 0px hoog wordt */
+        padding: 0px 0 !important;
+    }
+
+    /* Zorg dat de binnenzijde van de Quark navbar op mobiel de flexbox behoudt */
+    #header .navbar,
+    #header .container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding-right: 70px !important; /* extra space for the fixed hamburger icon */
+    }
+
+    .navbar-brand.mr-2 {
+        max-width: calc(100% - 110px) !important;
+        margin-right: auto !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
     }
 
     .navbar-brand.mr-2 img {
@@ -246,6 +266,8 @@ body.mobile-nav-open .mobile-menu-close {
     .logo-text {
         font-size: 0.9rem !important;
         white-space: normal !important;
+        overflow-wrap: break-word !important;
+        text-align: left !important;
     }
 
     /* Team & Intro naar column */
@@ -582,38 +604,99 @@ section.navbar-section.logo {
 }
 
 /* ==========================================================================
-   STRICT MOBILE HAMBURGER FIX FOR REAL DEVICES
+   6. RESPONSIVE MEDIA QUERIES & MOBILE NAVIGATION FIX
    ========================================================================== */
-
 @media (max-width: 1100px) {
-    /* We dwingen de header om op echte telefoons een hardware-versnelde laag aan te maken */
+    body {
+        padding-top: 30px !important;
+    }
+
     #header {
-        position: fixed !important;
-        z-index: 10000 !important;
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0); /* Fikst stacking-bugs op iOS/Android */
+        min-height: 60px !important;
     }
 
-    /* Quark gebruikt vaak .navbar-section of .navbar-item voor de mobiele knoppen */
-    .navbar-section, 
-    .navbar-toggle, 
-    .mobile-menu-toggle, 
-    .custom-toggle {
-        position: relative !important;
-        z-index: 99999 !important; /* Absurde prioriteit vlak onder de knop zelf */
-        opacity: 1 !important;
+    section#start,
+    #start,
+    #body-wrapper.section {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .navbar-brand.mr-2 img {
+        height: 45px !important;
+    }
+
+    .logo-text {
+        font-size: 0.9rem !important;
+        white-space: normal !important;
+    }
+
+    /* 1. CRUCIAAL: Dwing de verborgen hoofdcontainer tevoorschijn op mobiel */
+    div.mobile-menu {
+        display: block !important;
         visibility: visible !important;
-        display: block !important; /* Zorgt dat hij niet onzichtbaar wordt geduwd */
+        opacity: 1 !important;
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        width: 60px !important;
+        height: 65px !important; /* Matcht de mobiele hoogte van je header */
+        z-index: 25000 !important; /* Ligt bovenop de fixed header balk */
+        pointer-events: auto !important;
+        background: transparent !important;
     }
 
-    /* Specifiek voor de iconen/streepjes in het Quark-thema */
-    #header i, 
-    .navbar-toggle span, 
-    .mobile-menu-toggle span,
-    .navbar-section .fa-bars {
-        color: #333333 !important;      /* Dwingt de kleur naar donkergrijs/zwart */
-        background-color: #333333 !important; /* Voor het geval het CSS-streepjes zijn */
-        z-index: 100000 !important;
-        opacity: 1 !important;
+    /* 2. Style de button container daarbinnen */
+    div.mobile-menu #toggle.button_container {
+        display: block !important;
+        visibility: visible !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important; /* Perfect gecentreerd in de 60x65 box */
+        width: 28px !important;
+        height: 24px !important;
+        cursor: pointer !important;
+        z-index: 26000 !important;
+    }
+
+    /* 3. Dwing de drie CSS-streepjes van Quark tevoorschijn in het zwart */
+    div.mobile-menu #toggle.button_container span {
+        display: block !important;
+        visibility: visible !important;
+        position: absolute !important;
+        left: 0 !important;
+        background: #333333 !important; /* Hard zwart op de witte balk */
+        height: 3px !important;
+        width: 100% !important;
+        border-radius: 2px !important;
+        transition: all 0.2s ease;
+    }
+
+    /* Geef de drie afzonderlijke streepjes hun verticale positie binnen het icoon */
+    div.mobile-menu #toggle.button_container span.top {
+        top: 0 !important;
+    }
+    div.mobile-menu #toggle.button_container span.middle {
+        top: 9px !important;
+    }
+    div.mobile-menu #toggle.button_container span.bottom {
+        top: 18px !important;
+    }
+
+    /* Team & Intro lay-out naar kolommen op mobiel */
+    .piloot-row, .flex-reverse, .intro-flex-container {
+        flex-direction: column !important;
+        display: block !important;
+    }
+
+    .piloot-foto, .piloot-tekst, .intro-image-wrapper {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 0 auto 20px auto;
+    }
+
+    iframe {
+        height: 400px !important;
     }
 }

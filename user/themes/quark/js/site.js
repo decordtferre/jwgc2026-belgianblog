@@ -1,9 +1,9 @@
 var isTouch = window.DocumentTouch && document instanceof DocumentTouch;
 
 function scrollHeader() {
-    // Has scrolled class on header
+    // Has scrolled class on header (desktop only)
     var zvalue = $(document).scrollTop();
-    if ( zvalue > 75 )
+    if ( zvalue > 75 && $(window).width() >= 1100 )
         $("#header").addClass("scrolled");
     else
         $("#header").removeClass("scrolled");
