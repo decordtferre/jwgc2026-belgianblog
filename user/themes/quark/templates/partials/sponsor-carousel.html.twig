@@ -2,7 +2,6 @@
     { logo: 'redbull.png',  url: 'https://www.redbull.com' },
     { logo: 'jako.png',     url: 'https://www.jako.com' },
     { logo: 'fulfil.png',   url: 'https://www.fulfilnutrition.be' },
-    { logo: 'toutbien.png', url: 'https://toutbienpils.com/' },
     { logo: 'styl.png',     url: 'https://www.stylaviation.com/' },
     { logo: 'brusselsairlines.png', url: 'https://www.brusselsairlines.com/be/nl/homepage' },
     { logo: 'bensky.png', url: 'https://www.bensky.eu' },
@@ -10,7 +9,8 @@
 ] %}
 
 <section id="sponsors" class="section py-3">
-    <div class="container {{ grid_size }}">
+    {# GEFIKST: We negeren grid_size en dwingen hier keihard de max-width van je tekstpagina af (1100px) #}
+    <div class="container" style="max-width: 1100px !important; width: 100% !important; margin: 0 auto !important; padding: 0 1rem !important; box-sizing: border-box;">
         <div class="sponsor-track-wrapper">
             <div class="sponsor-track">
                 {% for sponsor in sponsors %}
@@ -37,73 +37,94 @@
 <style>
     .sponsor-track-wrapper {
         overflow: hidden;
-        width: 100%;
-        padding: 0.5rem 0;
+        width: 100% !important;
+        position: relative;
+        padding: 1rem 0;
+        margin: 0;
         -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
         mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
     }
+    
     .sponsor-track {
         display: flex;
-        gap: 4rem;
+        gap: 3rem; /* Iets compactere gap zodat er meer logo's tegelijk binnen de 1100px vallen */
         align-items: center;
-        width: max-content;
-        animation: sponsor-scroll 24s linear infinite;
+        width: max-content !important;
+        animation: sponsor-scroll 24s linear infinite; 
     }
-    /* Pauzeer via CSS hover — geen JS nodig */
+    
     .sponsor-track-wrapper:hover .sponsor-track {
         animation-play-state: paused;
     }
+    
     @keyframes sponsor-scroll {
         from { transform: translateX(0); }
         to   { transform: translateX(var(--sponsor-half-width, -50%)); }
     }
-    .sponsor-slide { flex-shrink: 0; display: flex; align-items: center; }
-    .sponsor-slide a { display: flex; align-items: center; text-decoration: none; }
+    
+    .sponsor-slide { 
+        flex-shrink: 0; 
+        display: flex; 
+        align-items: center; 
+    }
+    
+    .sponsor-slide a { 
+        display: flex; 
+        align-items: center; 
+        text-decoration: none; 
+    }
+    
     .sponsor-slide img {
-        max-height: 110px;
-        max-width: 220px;
-        width: auto; height: auto;
+        max-height: 95px; /* Iets subtieler van hoogte zodat het beter matcht met de tijdlijn eronder */
+        max-width: 190px;
+        width: auto !important; 
+        height: auto;
         object-fit: contain;
         filter: grayscale(40%) opacity(75%);
         transition: filter 0.3s ease, transform 0.3s ease;
     }
+    
     .sponsor-slide img:hover {
         filter: grayscale(0%) opacity(100%);
-        transform: scale(1.08);
+        transform: scale(1.06);
     }
+    
     @media (max-width: 1000px) {
-        .sponsor-slide img { max-height: 90px; max-width: 200px; }
+        .sponsor-slide img { 
+            max-height: 80px;
+            max-width: 170px; 
+        }
     }
 </style>
 
 <script>
 (function () {
     function initCarousel(track) {
-        var wrapper = track.closest('.sponsor-track-wrapper');
-
         function measure() {
             var slides = track.querySelectorAll('.sponsor-slide');
             var n = Math.floor(slides.length / 2);
-            var gap = parseFloat(getComputedStyle(track).gap) || 64;
+            var gap = parseFloat(getComputedStyle(track).gap) || 48;
             var total = 0;
             for (var i = 0; i < n; i++) {
                 total += slides[i].offsetWidth + gap;
             }
-            // CSS custom property instellen op de track
             track.style.setProperty('--sponsor-half-width', '-' + total + 'px');
         }
 
-        // Wacht tot alle afbeeldingen geladen zijn
         if (document.readyState === 'complete') {
             measure();
         } else {
             window.addEventListener('load', measure);
         }
 
-        // Herbereken bij resize (bv. font-scaling of zoom)
-        window.addEventListener('resize', measure);
+        var resizeTimeout;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(measure, 100);
+        });
     }
 
-    document.querySelectorAll('.sponsor-track').forEach(initCarousel);
+    var tracks = document.querySelectorAll('.sponsor-track');
+    tracks.forEach(initCarousel);
 })();
 </script>

@@ -35,5 +35,3 @@ show_sponsors: true
 </div>
 <section class="section py-3" style="padding-top: 0px; padding-bottom: 15px;">
 </section>
-
-**Note:** Tracking might be delayed by a few minutes depending on the competition's "live-track" security settings.

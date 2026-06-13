@@ -1,0 +1,183 @@
+<section class="tl-horizontal-section">
+  {# GEFIKST: Harde max-width van 1100px toegevoegd, net als bij de sponsor-carousel #}
+  <div class="container" style="max-width: 1100px !important; width: 100% !important; margin: 0 auto !important; padding: 0 1rem !important; box-sizing: border-box;">
+    <div class="tl-hz-container">
+      
+      {% for event in page.header.events %}
+        <div class="tl-hz-item">
+          
+          <div class="tl-hz-line-wrapper">
+            <div class="tl-hz-dot"></div>
+          </div>
+
+          <div class="tl-hz-card">
+            <div class="tl-hz-date">
+              {{ event.date }}{% if event.time %} — {{ event.time }}{% endif %}
+            </div>
+            <div class="tl-hz-label">{{ event.label }}</div>
+            <span class="tl-badge-subtiel tl-badge-{{ event.type }}">
+              {{ event.type|capitalize }}
+            </span>
+          </div>
+
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+<style>
+.tl-horizontal-section {
+    padding: 1.5rem 0;    
+    background: #ffffff;
+    position: relative; 
+    z-index: 1;        
+    clear: both;        
+    width: 100%;
+}
+
+.tl-hz-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100% !important;
+    margin-top: 5px;
+}
+
+.tl-hz-item {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 8px; /* Precieze ademruimte tussen de kaarten binnen de 1100px */
+    box-sizing: border-box;
+    min-width: 110px; /* Houdt ze mooi in verhouding */
+}
+
+.tl-hz-line-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+    height: 16px;
+}
+
+.tl-hz-line-wrapper::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    height: 3px;
+    background: #185FA5;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.tl-hz-item:first-child .tl-hz-line-wrapper::before { left: 50%; }
+.tl-hz-item:last-child .tl-hz-line-wrapper::before { right: 50%; }
+
+.tl-hz-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid #185FA5;
+    z-index: 2;
+    box-shadow: 0 0 0 3px #ffffff;
+}
+
+.tl-hz-card {
+    background: #f8f8f6;
+    border: 1px solid #e8e8e4;
+    border-radius: 6px;
+    padding: 10px 6px;
+    width: 100%;
+    text-align: center; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.01);
+    box-sizing: border-box;
+}
+
+.tl-hz-date {
+    font-size: 10px;
+    color: #888;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.tl-hz-label {
+    font-size: 11px; 
+    font-weight: 600;
+    color: #222;
+    line-height: 1.3;
+    min-height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tl-badge-subtiel {
+    display: inline-block;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tl-badge-training { background: #e2f0ed; color: #1d9e75; }
+.tl-badge-official { background: #e6e5f5; color: #534ab7; }
+.tl-badge-ceremony { background: #e6e5f5; color: #534ab7; }
+.tl-badge-flying   { background: #e3ecf4; color: #185fa5; }
+.tl-badge-social   { background: #f5e7e3; color: #993c1d; }
+
+@media (max-width: 860px) {
+    .tl-hz-container {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+    .tl-hz-item {
+        flex-direction: row; 
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .tl-hz-line-wrapper {
+        width: 30px;
+        height: auto;
+        align-self: stroke;
+        margin-bottom: 0;
+        position: relative;
+    }
+    .tl-hz-line-wrapper::before {
+        left: 14px;
+        right: auto;
+        top: 0;
+        bottom: -25px;
+        width: 3px;
+        height: auto;
+    }
+    .tl-hz-item:last-child .tl-hz-line-wrapper::before {
+        display: none;
+    }
+    .tl-hz-dot {
+        margin-top: 12px;
+    }
+    .tl-hz-card {
+        text-align: left;
+        flex: 1;
+    }
+    .tl-hz-label {
+        min-height: unset;
+        justify-content: flex-start;
+        margin-bottom: 4px;
+    }
+}
+</style>

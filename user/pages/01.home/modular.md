@@ -9,6 +9,7 @@ content:
         dir: asc
         custom:
             - _welcome
+            - _timeline
             - _tracking
             - _results
 metadata:
