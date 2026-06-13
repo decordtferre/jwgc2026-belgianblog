@@ -580,3 +580,22 @@ section.navbar-section.logo {
         margin-bottom: 4px;
     }
 }
+
+/* ==========================================================================
+   MOBILE HAMBURGER MENU FIX
+   ========================================================================== */
+
+/* Dit dwingt de mobiele menu-knop om áltijd bovenop de header te liggen */
+.navbar-toggle,
+.mobile-menu-toggle,
+#mobile-menu-toggle,
+.navigation-toggle {
+    position: relative;
+    z-index: 20000 !important; /* Hoger dan de 10000 van de header */
+}
+
+/* Zorg dat de streepjes van het icoon ook de juiste kleur hebben en zichtbaar zijn */
+.navbar-toggle span,
+.mobile-menu-toggle span {
+    background-color: #333 !important; /* Matcht met de donkere tekstkleur van je menu */
+}
