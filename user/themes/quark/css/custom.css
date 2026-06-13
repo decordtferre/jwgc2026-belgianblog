@@ -582,20 +582,38 @@ section.navbar-section.logo {
 }
 
 /* ==========================================================================
-   MOBILE HAMBURGER MENU FIX
+   STRICT MOBILE HAMBURGER FIX FOR REAL DEVICES
    ========================================================================== */
 
-/* Dit dwingt de mobiele menu-knop om áltijd bovenop de header te liggen */
-.navbar-toggle,
-.mobile-menu-toggle,
-#mobile-menu-toggle,
-.navigation-toggle {
-    position: relative;
-    z-index: 20000 !important; /* Hoger dan de 10000 van de header */
-}
+@media (max-width: 1100px) {
+    /* We dwingen de header om op echte telefoons een hardware-versnelde laag aan te maken */
+    #header {
+        position: fixed !important;
+        z-index: 10000 !important;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0); /* Fikst stacking-bugs op iOS/Android */
+    }
 
-/* Zorg dat de streepjes van het icoon ook de juiste kleur hebben en zichtbaar zijn */
-.navbar-toggle span,
-.mobile-menu-toggle span {
-    background-color: #333 !important; /* Matcht met de donkere tekstkleur van je menu */
+    /* Quark gebruikt vaak .navbar-section of .navbar-item voor de mobiele knoppen */
+    .navbar-section, 
+    .navbar-toggle, 
+    .mobile-menu-toggle, 
+    .custom-toggle {
+        position: relative !important;
+        z-index: 99999 !important; /* Absurde prioriteit vlak onder de knop zelf */
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important; /* Zorgt dat hij niet onzichtbaar wordt geduwd */
+    }
+
+    /* Specifiek voor de iconen/streepjes in het Quark-thema */
+    #header i, 
+    .navbar-toggle span, 
+    .mobile-menu-toggle span,
+    .navbar-section .fa-bars {
+        color: #333333 !important;      /* Dwingt de kleur naar donkergrijs/zwart */
+        background-color: #333333 !important; /* Voor het geval het CSS-streepjes zijn */
+        z-index: 100000 !important;
+        opacity: 1 !important;
+    }
 }
