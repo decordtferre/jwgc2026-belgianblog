@@ -387,7 +387,7 @@ body.mobile-nav-open .mobile-menu-close {
 
 @media (max-width: 768px) {
     .column.col-7.col-md-12 {
-        padding: 0 !important;
+        padding: 0 1rem !important;
     }
 }
 
@@ -701,13 +701,67 @@ section.navbar-section.logo {
     }
 }
 
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
-.gallery figure { margin: 0; }
-.gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; cursor: pointer; background: #111; }
-.gallery figcaption { text-align: center; font-style: italic; margin-top: 6px; }
+.gallery {
+    columns: 3 200px;   /* 3 columns, min 200px each — auto-adjusts on smaller screens */
+    column-gap: 15px;
+}
+
+.gallery figure {
+    margin: 0 0 15px;
+    break-inside: avoid;   /* prevents an image being split across columns */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;           /* no more forced crop */
+    display: block;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #111;
+}
+
+.gallery figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 6px;
+}
 
 .lightbox { display: none; position: fixed; z-index: 999999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); text-align: center; }
 .lightbox.active { display: flex; align-items: center; justify-content: center; }
 .lightbox-overlay { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; }
 .lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; cursor: pointer; position: relative; z-index: 1; }
 .lightbox .close { position: fixed; top: 20px; right: 30px; color: white; font-size: 40px; text-decoration: none; z-index: 1000000; cursor: pointer; }
+
+@media (max-width: 600px) {
+    .gallery { columns: 1; }
+}
+
+@media (max-width: 768px) {
+    .bricklayer {
+        position: static !important;
+        height: auto !important;
+    }
+
+    .bricklayer .card {
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        margin: 0 auto 20px auto !important;
+        float: none !important;
+    }
+}
+
+html, body {
+    overflow-x: hidden !important;
+}
+
+@media (max-width: 768px) {
+    .bricklayer,
+    .bricklayer .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}

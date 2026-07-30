@@ -6,11 +6,7 @@ taxonomy:
     category: blog
 ---
 
-**The Belgian Junior Gliding Team has officially arrived at the airfield of Aalen-Elchingen!**
-
-===
-
-After a long drive with trailers in tow, we’ve all finally settled into the venue for this year's **Junior World Gliding Championships**. The airfield at Aalen-Elchingen is buzzing with activity as teams from all over the world are rigging their gliders and setting up camp.
+The Belgian Junior Gliding Team has officially arrived at the airfield of Aalen-Elchingen! After a long drive with trailers in tow, we’ve all finally settled into the venue for this year's **Junior World Gliding Championships**. The airfield at Aalen-Elchingen is buzzing with activity as teams from all over the world are rigging their gliders and setting up camp.
 
 Today gave us our first proper flying day of the campaign. Conditions were blue - almost no clouds to mark the thermals - but the lift turned out to be relatively good once the pilots found it, and both Michiel and Edwige put in solid flights, getting a good feel for the local thermal patterns and the Swabian Alb terrain.
 
@@ -27,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     renderGallery('gallery-day1', [
         { src: '/images/unofficialday1/flag.jpeg', alt: 'Belgische vlag', caption: 'Belgian camp with the Belgian flag and big antenna' },
         { src: '/images/unofficialday1/drawing.jpeg', alt: 'Tekening', caption: 'Drawings in the fields' },
-        { src: '/images/unofficialday1/outlanding.jpg', alt: 'Outlanding', caption: 'Outlanding field of Wannes' }
+        { src: '/images/unofficialday1/outlanding.jpg', alt: 'Outlanding', caption: 'Outlanding field of Wannes' },
+        { src: '/images/unofficialday1/atcamp.jpg', alt: 'Camp', caption: 'Arrival of Ferre and Axl with the camper' }
     ]);
 });
 </script>
