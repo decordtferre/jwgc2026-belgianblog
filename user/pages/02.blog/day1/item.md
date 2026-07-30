@@ -17,24 +17,20 @@ Today gave us our first proper flying day of the campaign. Conditions were blue 
 Wannes and Virginie weren't as lucky today and had to land out - though they were far from the only ones, with several other teams also caught out by the tricky blue conditions and we're forced to start their turbo or jet. All part of learning the terrain before the real thing starts, and the crews are already out to bring the gliders home.
 
 ### What's next?
-The gliders are being rigged as we speak. Tomorrow, we'll take to the skies for our first unofficial practice flight to get a feel for the local topography and the airspace. The weather forecast looks decent, so we're hoping to clock some hours before the official training starts on the 30th of July.
+The forecast for the coming days looks decent, so we're expecting more flying time before official training kicks off on the 30th. Plenty of chances still to get familiar with the local airspace and topography before it counts.
 
 Stay tuned for daily updates, flight logs, and (hopefully) plenty of Belgian flags on the leaderboard!
 
-### Photos!
-
-<style>
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
-.gallery figure { margin: 0; }
-.gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; cursor: pointer; }
-.gallery figcaption { text-align: center; font-style: italic; margin-top: 6px; }
-
-.lightbox { display: none; position: fixed; z-index: 999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); text-align: center; }
-.lightbox:target { display: flex; align-items: center; justify-content: center; }
-.lightbox img { max-width: 90%; max-height: 90%; }
-.lightbox .close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; text-decoration: none; }
-</style>
-
+<div id="gallery-day1"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    renderGallery('gallery-day1', [
+        { src: '/images/unofficialday1/flag.jpeg', alt: 'Belgische vlag', caption: 'Belgian camp with the Belgian flag and big antenna' },
+        { src: '/images/unofficialday1/drawing.jpeg', alt: 'Tekening', caption: 'Drawings in the fields' },
+        { src: '/images/unofficialday1/outlanding.jpg', alt: 'Outlanding', caption: 'Outlanding field of Wannes' }
+    ]);
+});
+</script>
 
 ### Entry List
 Curious about the competition? Check out the official entry list for the Standard and Club classes below:

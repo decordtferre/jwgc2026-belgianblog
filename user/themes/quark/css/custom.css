@@ -700,3 +700,14 @@ section.navbar-section.logo {
         height: 400px !important;
     }
 }
+
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; cursor: pointer; background: #111; }
+.gallery figcaption { text-align: center; font-style: italic; margin-top: 6px; }
+
+.lightbox { display: none; position: fixed; z-index: 999999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); text-align: center; }
+.lightbox.active { display: flex; align-items: center; justify-content: center; }
+.lightbox-overlay { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; cursor: pointer; position: absolute; top: 0; left: 0; }
+.lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; cursor: pointer; position: relative; z-index: 1; }
+.lightbox .close { position: fixed; top: 20px; right: 30px; color: white; font-size: 40px; text-decoration: none; z-index: 1000000; cursor: pointer; }
