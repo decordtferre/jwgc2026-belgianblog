@@ -9,7 +9,6 @@ webhook_token.txt
 /cache/
 /logs/
 /logs/popularity/
-/images/
 /system/
 /vendor/
 /.dependencies
