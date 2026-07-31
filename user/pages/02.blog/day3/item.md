@@ -19,10 +19,16 @@ Team Belgium ended the day in paradise, enjoying the traditional tapping of a ba
 document.addEventListener('DOMContentLoaded', function() {
     renderGallery('gallery-day3', [
         { src: '/images/officialday1/hot.jpeg', alt: 'hot', caption: 'Quite hot...' },
-        { src: '/images/officialday1/cockpit.jpeg', alt: 'cockpit', caption: 'View out of Edwige''s Discus' },
+        { src: '/images/officialday1/cockpit.jpeg', alt: 'cockpit', caption: 'View out of Edwige\'s Discus' },
         { src: '/images/officialday1/wing.jpeg', alt: 'wing', caption: 'All blue' },
         { src: '/images/officialday1/gearup_car.jpeg', alt: 'gearup', caption: 'Found a new retrieval crew member' },
-        { src: '/images/officialday1/michiel_beer.jpeg', alt: 'beer', caption: 'Michiel enjoying his beer after his flight' }
+        { src: '/images/officialday1/michiel_beer.jpeg', alt: 'beer', caption: 'Michiel enjoying his beer after his flight' },
+        { src: '/images/officialday1/axl.jpeg', alt: 'axl_beer', caption: 'Official opening of the bar' },
+        { src: '/images/officialday1/bar.jpeg', alt: 'bar', caption: 'The bar in question' },
+        { src: '/images/officialday1/guillaume_tent.jpeg', alt: 'thunderstorm', caption: 'Holding down the tent for the gusts' },
+        { src: '/images/officialday1/raindance.mp4', alt: 'bar', caption: 'Axl doing a raindance..., bookings please mail to belgianjuniorglidingteam@gmail.com' },
+        { src: '/images/officialday1/czech.mp4', alt: 'czech', caption: 'Converting the Czech into Team Belgium members' },
+        { src: '/images/officialday1/bbq.MOV', alt: 'bbq', caption: 'BBQ time!' },
     ]);
 });
 </script>
