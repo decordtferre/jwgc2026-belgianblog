@@ -6,7 +6,7 @@ show_sponsors: true
 
 # Live Tracking
 
-<iframe name="tracker_iframe" id="tracker_iframe" src="https://glideandseek.com/?embed=localhost:8080&viewport=48.77,10.26,10" width="100%" height="500px" style="border:none; border-radius: 10px;" allow="geolocation"></iframe>
+<iframe name="tracker_iframe" id="tracker_iframe" src="https://glideandseek.com/?embed=localhost:8080&viewport=48.77,10.26,10" width="100%" height="100px" style="border:none; border-radius: 10px;" allow="geolocation"></iframe>
 
 <div class="pilot-tracking-container" style="text-align: center; margin-top: 30px; font-family: sans-serif;">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
