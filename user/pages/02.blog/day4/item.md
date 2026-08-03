@@ -6,6 +6,10 @@ taxonomy:
     category: blog
 ---
 
+With the official opening of the Junior World Gliding Championships in Aalen just around the corner, the last few days before competition kick-off were a mix of waiting, rigging and chilling.
+
+===
+
 ### Friday, July 31
 The pilots made the call: no flying today. That meant Michiel's LS4 was sitting idle - so his crew Carl grabbed the chance to jump in and fly it himself for the day. For the rest of the team, the day started early anyway: Wannes had scrutineering at 8am, so everyone was up in good time to get the glider rigged.
 
