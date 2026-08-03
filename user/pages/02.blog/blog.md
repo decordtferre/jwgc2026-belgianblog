@@ -23,6 +23,7 @@ metadata:
 # Blog
 Welcome to our official JWGC 2026 blog. Below you can find all the daily updates from the Belgian juniors at Aalen-Elchingen. Each post includes our personal stories from the cockpit and the official daily scores integrated from SoaringSpot. Don't forget to check the live tracker on the homepage during the race!
 
+<!---
 <link rel="stylesheet" href="/user/themes/quark/css/blog-countdown.css">
 
 <section class="blog-countdown" aria-labelledby="blog-countdown-title">
@@ -48,3 +49,5 @@ Welcome to our official JWGC 2026 blog. Below you can find all the daily updates
 </section>
 
 <script src="/user/themes/quark/js/blog-countdown.js"></script>
+
+--->
