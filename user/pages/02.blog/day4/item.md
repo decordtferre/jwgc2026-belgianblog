@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: '/images/officialday2/fan_gearup.jpeg', caption: 'The temperatures were too high for Gearup...' },
         { src: '/images/officialday2/gearup_hat.jpeg', caption: 'Gearup = model for the Jonker hats' },
         { src: '/images/officialday2/cable_folding.jpeg', caption: 'Michiel learning how to fold a tow cable properly' },
-        { src: '/images/officialday2/rigging_lv.jpeg', caption: 'Derigging LV after the scruteneering' },
+        { src: '/images/officialday2/rigging_LV.jpeg', caption: 'Derigging LV after the scruteneering' },
         { src: '/images/officialday2/halfstok.jpeg', caption: 'Belgian flag half mast to pay respects for a club member of KAZM' },
         { src: '/images/officialday3_and_ceremony/guillaume_pump.jpeg', caption: 'Guillaume repairing the pump of Edwige' },
         { src: '/images/officialday3_and_ceremony/ceremony1.jpeg', caption: 'Ceremony' },
