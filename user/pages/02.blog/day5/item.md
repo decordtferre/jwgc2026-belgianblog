@@ -14,7 +14,18 @@ The day started fairly normally for Wannes, with good lift straight after launch
 
 Michiel made sure not to start too late with the storm approaching. The cumulus on the first leg didn't develop as forecast, and with no one else departing, he held off too - until it became clear that the Dutch and Hungarian pilots had already left, prompting him to start as well. The first leg went very well, with strong thermals throughout. He turned in the first sector at the last usable cumulus. A gaggle caught up with him underneath on the way to the second sector, but Michiel chose a different route which turned out to be the wrong call, forcing him to work hard just to get home. All things considered, the team was relieved to see Michiel make it round.
 
-Edwige had a great start, leaving the line when she felt good about it and gradually joining a big gaggle that pushed on together all the way to the last turning point. From there she could see rain and a thunderstorm sitting right on the track home, and with about 100m still needed for a safe final glide, she chose not to risk pushing into the poor air mass and rain ahead. Instead she detoured north to try to reconnect with the last usable cumulus, but couldn't find a climb there either, and landed safely at an airfield, where she was picked up by, in her words, "the fanciest Dynamic" around. A fun day regardless - she's getting to know the Discus better with every flight, and starting to properly enjoy flying it. Virginie also landed out and was retrieved by Carine, Ferre, Axl & Wannes. More tomorrow.
+Edwige had a great start, leaving the line when she felt good about it and gradually joining a big gaggle that pushed on together all the way to the last turning point. From there she could see rain and a thunderstorm sitting right on the track home, and with about 100m still needed for a safe final glide, she chose not to risk pushing into the poor air mass and rain ahead. Instead she detoured north to try to reconnect with the last usable cumulus, but couldn't find a climb there either, and landed safely at an airfield, where she was picked up by, in her words, "the fanciest Dynamic" around. A fun day regardless - she's getting to know the Discus better with every flight, and starting to properly enjoy flying it. Virginie also landed out and was retrieved by Carine, Ferre, Axl & Wannes. More tomorrow. Soaringspot leaderbord and photos below!
+
+<div class="scoring-compare">
+    <div class="iframe-crop">
+        <iframe src="https://www.soaringspot.com/en_gb/jwgc2026/results/club/task-1-on-2026-08-03/daily"></iframe>
+    </div>
+    <div class="iframe-crop">
+        <iframe src="https://www.soaringspot.com/en_gb/jwgc2026/results/standard/task-1-on-2026-08-03/daily"></iframe>
+    </div>
+</div>
+
+
 
 <div id="gallery-day5"></div>
 <script>
