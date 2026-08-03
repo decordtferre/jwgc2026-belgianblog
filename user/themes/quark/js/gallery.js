@@ -38,11 +38,13 @@ function renderGallery(containerId, images) {
 
 function openLightbox(id) {
     document.getElementById(id).classList.add('active');
-    // sync the lightbox video to where the thumbnail was, then let it play with sound
     const thumb = document.querySelector(`[onclick="openLightbox('${id}')"]`);
     const lightboxVid = document.querySelector('#' + id + ' video');
     if (thumb && thumb.tagName === 'VIDEO' && lightboxVid) {
         lightboxVid.currentTime = thumb.currentTime;
+    }
+    if (lightboxVid) {
+        lightboxVid.muted = true;
     }
 }
 
