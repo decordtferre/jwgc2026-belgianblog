@@ -25,7 +25,7 @@ function renderGallery(containerId, images) {
                 <span class="close" onclick="closeLightbox('${id}')">&times;</span>
                 <div class="lightbox-overlay" onclick="closeLightbox('${id}')">
                     ${video
-                        ? `<video src="${img.src}" controls autoplay muted playsinline onclick="event.stopPropagation()"></video>`
+                        ? `<video src="${img.src}" controls playsinline onclick="event.stopPropagation()"></video>`
                         : `<img src="${img.src}">`
                     }
                 </div>
