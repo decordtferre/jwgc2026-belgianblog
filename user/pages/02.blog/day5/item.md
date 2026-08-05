@@ -25,8 +25,6 @@ Edwige had a great start, leaving the line when she felt good about it and gradu
     </div>
 </div>
 
-
-
 <div id="gallery-day5"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
