@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: '/images/compday3/edwige1.jpg', caption: '' },
         { src: '/images/compday3/lookup.jpg', caption: '' },
         { src: '/images/compday3/michiel_preparing.jpg', caption: '' },
-        { src: '/images/compday3/wannes_preparing', caption: '' },
+        { src: '/images/compday3/wannes_preparing.jpg', caption: '' },
         { src: '/images/compday3/wannes2.jpg', caption: '' },
         { src: '/images/compday3/thunderstorm.jpeg', caption: '' },
         { src: '/images/compday3/rain_gliderr.jpeg', caption: '' },
