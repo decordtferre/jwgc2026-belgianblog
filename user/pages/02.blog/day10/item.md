@@ -1,5 +1,5 @@
 ---
-title: 'Competition Day 6: '
+title: 'Competition Day 6: Blue Before The Break'
 date: '08-08-2026 23:00'
 published: true
 taxonomy:
