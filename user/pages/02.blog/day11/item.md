@@ -44,6 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: '/images/compday7/WhatsApp Video 2026-08-10 at 16.17.32.mp4', caption: '' },
         { src: '/images/compday7/WhatsApp Video 2026-08-10 at 16.17.34.mp4', caption: '' },
         { src: '/images/compday7/interview.mp4', caption: '' },
+        { src: '/images/compday7/weglide/73j3srqwU2L9mpaq9TSVCDQS_medium.jpg', caption: '' },
+        { src: '/images/compday7/weglide/C225IlHYb8qMOkZaWJjHa7KV_medium.jpg', caption: '' },
+        { src: '/images/compday7/weglide/DEHfdaf80ixETmCALyaxtfZP_medium.jpg', caption: '' },
+        { src: '/images/compday7/weglide/OLa2QenGBlueMsTEkm2CktlL_medium.jpg', caption: '' },
+        { src: '/images/compday7/weglide/Zw9xQDyfA3jnj2PLznGqX8qC_medium.jpg', caption: '' },
+        { src: '/images/compday7/weglide/aqFX0AsXK1YhdQmltK7CjUYP_medium.jpg', caption: '' },
+        { src: '/images/compday7/weglide/kAeobqs8pyWV1PVoIJ5s8j7w_medium.jpg', caption: '' },
     ]);
 });
 </script>
