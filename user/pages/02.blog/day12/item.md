@@ -1,7 +1,7 @@
 ---
 title: 'Competition Day 8:'
 date: '11-08-2026 23:00'
-published: true
+published: false
 taxonomy:
     category: blog
 ---
