@@ -1,7 +1,7 @@
 ---
 title: 'Competition Day 7: Rain On Final Glide'
 date: '10-08-2026 23:00'
-published: true
+published: false
 taxonomy:
     category: blog
 ---
