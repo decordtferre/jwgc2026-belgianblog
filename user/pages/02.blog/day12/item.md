@@ -1,5 +1,5 @@
 ---
-title: 'Competition Day 8'
+title: 'Competition Day 8: Low & Blue'
 date: '11-08-2026 23:00'
 published: true
 taxonomy:
@@ -39,6 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: '/images/compday8/WhatsApp Image 2026-08-11 at 10.04.59.jpeg', caption: '' },
         { src: '/images/compday8/WhatsApp Image 2026-08-11 at 10.05.00.jpeg', caption: '' },
         { src: '/images/compday8/WhatsApp Image 2026-08-11 at 17.11.52.jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 22.57.07 (1).jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 22.57.07.jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 22.57.08 (1).jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 22.57.08 (2).jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 22.57.08.jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 22.57.28 (1).jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 22.57.28.jpeg', caption: '' },
         { src: '/images/compday8/WhatsApp Video 2026-08-11 at 18.27.39.mp4', caption: '' },
         { src: '/images/compday8/jQ528A37xNDtqZ8w4c17uG2y_medium.jpg', caption: '' },
         { src: '/images/compday8/tiTi3S0jwQWVCu1ncPljbQip_medium.jpg', caption: '' },
