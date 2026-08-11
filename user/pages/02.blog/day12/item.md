@@ -34,7 +34,9 @@ Text follows!
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     renderGallery('gallery-day12', [
-        { src: '/images/compday8/', caption: '' },
+        { src: '/images/compday8/jQ528A37xNDtqZ8w4c17uG2y_medium.jpg', caption: '' },
+        { src: '/images/compday8/tiTi3S0jwQWVCu1ncPljbQip_medium.jpg', caption: '' },
+        { src: '/images/compday8/yCwX5I5jLwniYJ9Wx456aWzs_medium.jpg', caption: '' },
     ]);
 });
 </script>
