@@ -13,7 +13,7 @@ Text follows!
 ## [Michiel](https://www.weglide.org/flight/1203089)
 
 
-## [Edwige]()
+## [Edwige]
 
 
 ## [Wannes](https://www.weglide.org/flight/1203320)
@@ -34,6 +34,11 @@ Text follows!
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     renderGallery('gallery-day12', [
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 10.04.57.jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 10.04.59.jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 10.05.00.jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Image 2026-08-11 at 17.11.52.jpeg', caption: '' },
+        { src: '/images/compday8/WhatsApp Video 2026-08-11 at 18.27.39.mp4', caption: '' },
         { src: '/images/compday8/jQ528A37xNDtqZ8w4c17uG2y_medium.jpg', caption: '' },
         { src: '/images/compday8/tiTi3S0jwQWVCu1ncPljbQip_medium.jpg', caption: '' },
         { src: '/images/compday8/yCwX5I5jLwniYJ9Wx456aWzs_medium.jpg', caption: '' },
