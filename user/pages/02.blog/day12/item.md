@@ -1,7 +1,7 @@
 ---
-title: 'Competition Day 8:'
+title: 'Competition Day 8'
 date: '11-08-2026 23:00'
-published: false
+published: true
 taxonomy:
     category: blog
 ---
@@ -10,14 +10,13 @@ Text follows!
 
 ===
 
-## [Michiel](https://www.weglide.org/flight/1201309)
+## [Michiel](https://www.weglide.org/flight/1203089)
 
 
+## [Edwige]()
 
-## [Edwige](https://www.weglide.org/flight/1201487)
 
-
-## [Wannes](https://www.weglide.org/flight/1201493)
+## [Wannes](https://www.weglide.org/flight/1203320)
 
 
 
