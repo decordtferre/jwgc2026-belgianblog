@@ -12,7 +12,7 @@ Text follows!
 
 ## [Michiel](https://www.weglide.org/flight/1204336)
 
-## [Edwige] 
+## [Edwige](https://www.weglide.org/flight/1205140)
 
 ## [Wannes](https://www.weglide.org/flight/1204624)
 
@@ -59,6 +59,19 @@ document.addEventListener('DOMContentLoaded', function() {
         { src: '/images/compday9/WhatsApp Image 2026-08-12 at 20.45.50 (3).jpeg', caption: '' },
         { src: '/images/compday9/WhatsApp Image 2026-08-12 at 20.45.50.jpeg', caption: '' },
         { src: '/images/compday9/WhatsApp Video 2026-08-12 at 18.15.22.mp4', caption: '' },
+        { src: '/images/compday9/weglide/3HgAoKEGEORhQH9VzhndoBar_medium.jpg', caption: '' },
+        { src: '/images/compday9/weglide/Vdms6Iu9w82Oml84qrcWm7n4_medium.jpg', caption: '' },
+        { src: '/images/compday9/weglide/WhatsApp Image 2026-08-12 at 22.21.05.jpeg', caption: '' },
+        { src: '/images/compday9/weglide/WhatsApp Image 2026-08-12 at 22.21.06.jpeg', caption: '' },
+        { src: '/images/compday9/weglide/WhatsApp Image 2026-08-12 at 22.21.07.jpeg', caption: '' },
+        { src: '/images/compday9/weglide/WhatsApp Image 2026-08-12 at 22.21.08 (1).jpeg', caption: '' },
+        { src: '/images/compday9/weglide/WhatsApp Image 2026-08-12 at 22.21.08.jpeg', caption: '' },
+        { src: '/images/compday9/weglide/WhatsApp Image 2026-08-13 at 09.41.08.jpeg', caption: '' },
+        { src: '/images/compday9/weglide/WhatsApp Video 2026-08-13 at 09.41.16.mp4', caption: '' },
+        { src: '/images/compday9/weglide/b0LksVi0h3uurRKkJVwr65U5_medium.jpg', caption: '' },
+        { src: '/images/compday9/weglide/bnOmWqqXNqnIYkE0g1PSVAvF_medium.jpg', caption: '' },
+        { src: '/images/compday9/weglide/gHXczTQpgVlih7bwYviJZXpe_medium.jpg', caption: '' },
+        { src: '/images/compday9/weglide/lGCfaYaJdGB7qUdwkUbcijY8_medium.jpg', caption: '' },
     ]);
 });
 </script>
