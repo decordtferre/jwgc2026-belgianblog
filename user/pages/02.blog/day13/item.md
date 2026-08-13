@@ -6,15 +6,23 @@ taxonomy:
     category: blog
 ---
 
-Text follows!
+Another blue day greeted the fleet at JWGC, with pilots timing their starts carefully around the eclipse to make the most of the shrinking thermal window before conditions faded.
 
 ===
 
 ## [Michiel](https://www.weglide.org/flight/1204336)
 
+Gaggle flying has never been Michiel's favourite way to race, so today doubled as valuable practice. He launched just behind two French pilots, forming a small but quick gaggle on the first leg. After merging into a larger group, the pace seemed to drop, and the strong thermals dried up just as he needed them, leaving him lower than the rest of the field. Then, out of nowhere, a 4 m/s climb lifted him back to the top of the pack, and from there it was simply a matter of bringing it home. A speed of 92 km/h on a blue day with average thermals is a solid result, and perhaps another podium finish is on the cards.
+
 ## [Edwige](https://www.weglide.org/flight/1205140)
 
+Edwige also faced another blue-sky task, but after a tougher day yesterday, this one went noticeably better. An early start helped her avoid trouble with the eclipse timing and get home before the thermals weakened too much, a plan that worked out in part: the first leg went great, though finding decent climbs on the way back proved trickier. To make things more interesting, dust kicked up during take-off settled on the canopy, leaving her flying the entire task with limited visibility. In the end, getting safely home was what mattered most, and that's exactly what she did.
+
 ## [Wannes](https://www.weglide.org/flight/1204624)
+
+Text follows.
+
+Two very different battles in the same blue skies today, one against a slowing gaggle, the other against fading visibility, but all pilots found their way home with results to be proud of.
 
 
 <div class="scoring-compare">

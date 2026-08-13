@@ -1,7 +1,7 @@
 ---
-title: 'Competition Day 10:'
+title: 'Competition Day 10: Another Podium!'
 date: '13-08-2026 23:00'
-published: false
+published: true
 taxonomy:
     category: blog
 ---
@@ -10,7 +10,7 @@ Text follows!
 
 ===
 
-## [Michiel]()
+## [Michiel](https://www.weglide.org/flight/1205666)
 
 ## [Edwige]()
 
