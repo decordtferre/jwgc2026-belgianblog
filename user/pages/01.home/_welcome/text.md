@@ -14,7 +14,7 @@ metadata:
 
 # Follow the Belgian juniors!
 From August 2nd to 15th, the skies over Aalen-Elchingen hosted the world's best
-junior glider pilots — and Team Belgium was proud to be among them. The 14th FAI
+junior glider pilots - and Team Belgium was proud to be among them. The 14th FAI
 Junior World Gliding Championships has officially come to an end, and what an
 experience it was.
 
