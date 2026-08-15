@@ -10,7 +10,6 @@ content:
         custom:
             - _welcome
             - _timeline
-            - _tracking
             - _results
 metadata:
     'og:title': 'JWGC 2026 - Belgian Juniors'

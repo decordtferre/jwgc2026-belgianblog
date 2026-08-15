@@ -4,7 +4,12 @@ id: results
 show_sponsors: false
 ---
 
-# Results
-Track the daily performance of our pilots. These results are pulled directly from **SoaringSpot**.
-
-<iframe src="https://www.soaringspot.com/en_gb/jwgc2026/results" width="100%" height="600px" style="border:none; border-radius: 10px;"></iframe>
+# Final Results
+<div class="scoring-compare">
+    <div class="iframe-crop">
+        <iframe src="https://www.soaringspot.com/en_gb/jwgc2026/results/club/task-11-on-2026-08-14/total"></iframe>
+    </div>
+    <div class="iframe-crop">
+        <iframe src="https://www.soaringspot.com/en_gb/jwgc2026/results/standard/task-11-on-2026-08-14/total"></iframe>
+    </div>
+</div>

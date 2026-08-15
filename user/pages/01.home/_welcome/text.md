@@ -13,6 +13,18 @@ metadata:
 ---
 
 # Follow the Belgian juniors!
-Welcome to the official blog of the Belgian Junior Gliding Team. We are reporting live from the **14th FAI Junior World Gliding Championships**.
+From August 2nd to 15th, the skies over Aalen-Elchingen hosted the world's best
+junior glider pilots — and Team Belgium was proud to be among them. The 14th FAI
+Junior World Gliding Championships has officially come to an end, and what an
+experience it was.
 
-From **August 2nd to 15th, 2026**, the world’s best young pilots will compete in the Club and Standard classes over the skies of **Aalen-Elchingen, Germany**. Stay tuned for daily briefings, cockpit footage, and behind-the-scenes updates on our pilots' performance.
+Two weeks of early mornings, tense weather calls & long tasks. Our pilots pushed themselves in both the Club and Standard classes, and the whole team came home with new experiences, new skills and new friendships. It was a successful campaign for Team Belgium, and one we'll be looking back on for a long time.
+
+None of this would have been possible without the people who followed along,
+cheered us on, and helped make this campaign happen. A huge thank you to
+everyone who supported us throughout the championships, and especially to
+our sponsors, without whom none of this would have been possible:
+
+**Jako · Styl Aviation · BenSky · Red Bull · Fulfil · AB InBev · Openroads · Brussels Airlines**
+
+Thank you for believing in our team. See you in the skies next time!
