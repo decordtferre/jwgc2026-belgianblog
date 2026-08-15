@@ -8,7 +8,7 @@ taxonomy:
 
 The day started with mixed signals from above: the Club Class was cancelled before the morning briefing had even finished, while Standard Class was given the green light to prepare. In the end, organisers decided to grid both classes anyway, keeping everyone ready on the runway while the weather situation continued to develop overhead.
 
-The wait didn't last long for Club Class. At 12:00, the task was officially cancelled and the overall leaderboard became definitive - meaning the standings from the previous days now stand as the final result for that class. As the Club Class pilots de-gridded and began packing up, Standard Class stayed put, gliders lined up and hope still alive that a window would open. But by 15:00, the weather made the decision for them too, and Standard Class joined Club Class on the ground for the day.
+The wait didn't last long for Club Class. At 12:00, the task was officially cancelled and the overall leaderboard became definitive - meaning the standings from the previous days now stand as the final result for that class, with Michiel ending up 4th!!!. As the Club Class pilots de-gridded and began packing up, Standard Class stayed put, gliders lined up and hope still alive that a window would open. But by 15:00, the weather made the decision for them too, and Standard Class joined Club Class on the ground for the day.
 
 With no flying to report, the competition moved from the sky to the party tent for the evening. A raffle drew a big crowd, with prizes ranging from the small and fun to the seriously impressive - the headline prize being a Cobra trailer. Closer to home, our own Wannes walked away with a €250 voucher for maintenance at DG Flugzeugbau, a handy prize for keeping the glider in top shape.
 
